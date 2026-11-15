@@ -175,6 +175,22 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 .hero .stack > *:nth-child(2){animation-delay:.08s}
 .hero .stack > *:nth-child(3){animation-delay:.16s}
 .hero .stack > *:nth-child(4){animation-delay:.24s}
+
+.enlace-t{text-decoration:underline;text-decoration-color:var(--dot);text-decoration-thickness:1.5px;text-underline-offset:4px}
+.redes{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.84rem}
+.redes a{text-decoration:none;color:var(--muted);font-weight:500}
+.redes a:hover{color:var(--ink)}
+.wa-flot{position:fixed;right:18px;bottom:18px;z-index:50;width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.18);transition:transform .2s}
+.wa-flot:hover{transform:scale(1.06)}
+.wa-flot svg{width:28px;height:28px;fill:#fff}
+.form{display:grid;gap:18px;max-width:40rem}
+.form label{display:grid;gap:6px;font-size:.84rem;font-weight:600;color:var(--ink)}
+.form input,.form textarea{font:inherit;font-weight:400;font-size:1rem;padding:12px 14px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:2px}
+.form textarea{min-height:110px;resize:vertical}
+.form .doble{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:600px){.form .doble{grid-template-columns:1fr}}
+.form button{justify-self:start;border:0;cursor:pointer}
+.aviso-ok{background:var(--soft);border:1px solid var(--line);padding:18px 20px}
 </style>
 
 </head>
@@ -233,7 +249,7 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 <section class="bloque"><div class="wrap split">
   <p class="eyebrow">Fuentes</p>
   <div class="filas">
-    <a class="fila" style="text-decoration:none" href="https://elestimulo.com/opinion/2026-10-08/relaciones-publicas-confianza/" target="_blank" rel="noopener"><h3>El Estímulo</h3><p class="muted">Columna de opinión de Yuraima Mercado.</p><span class="meta">2026</span></a>
+    <a class="fila" style="text-decoration:none" href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener"><h3>El Estímulo</h3><p class="muted">Columna de opinión de Yuraima Mercado.</p><span class="meta">2026</span></a>
     <a class="fila" style="text-decoration:none" href="https://las100protagonistas.com/yuraima-mercado/" target="_blank" rel="noopener"><h3>Las 100 Protagonistas</h3><p class="muted">Perfil biográfico.</p><span class="meta">2024</span></a>
     <a class="fila" style="text-decoration:none" href="https://www.linkedin.com/in/yuraimamercado/" target="_blank" rel="noopener"><h3>LinkedIn</h3><p class="muted">Perfil profesional y boletín Desde la Verdad.</p><span class="meta">Perfil</span></a>
     <div class="fila"><h3>P&amp;M, AMDD Chile, Fedecámaras Radio y PRODU</h3><p class="muted">Entrevistas y cobertura sectorial sobre YM Agency y su trayectoria.</p><span class="meta">2024–2026</span></div>
@@ -241,9 +257,10 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 </div></section>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Yuraima Mercado","jobTitle":"Estrategia en Comunicación, Relaciones Públicas e Influencia","worksFor":{"@type":"Organization","name":"YM Agency","address":"Caracas, Venezuela"},"alumniOf":["Universidad Santa María","IESA"],"hasCredential":"Licenciatura en Comunicación Social, mención Periodismo (Universidad Santa María)","email":"hola@yuraimamercado.com","url":"https://yuraimamercado.com","sameAs":["https://www.linkedin.com/in/yuraimamercado/","https://www.instagram.com/yuraimamercado/","https://las100protagonistas.com/yuraima-mercado/","https://elestimulo.com/autor/yuraima-mercado/"]}</script>
 </main>
-<footer class="pie"><div class="wrap"><div class="stack" style="gap:10px"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><small>Estrategia en Comunicación, Relaciones Públicas e Influencia · Caracas, Venezuela · © 2026</small><a class="enlace" href="/ia/" style="font-size:.82rem">Ficha para la IA</a></div><nav class="nav" aria-label="Principal"><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></footer>
+<footer class="pie"><div class="wrap"><div class="stack" style="gap:10px"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><small>Estrategia en Comunicación, Relaciones Públicas e Influencia · Caracas, Venezuela · © 2026</small><a class="enlace" href="/ia/" style="font-size:.82rem">Ficha para la IA</a><div class="redes"><a href="https://www.instagram.com/yuraimamercado/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/yuraimamercado/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7323002961196994560" target="_blank" rel="noopener">Desde la Verdad</a><a href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener">El Estímulo</a></div></div><nav class="nav" aria-label="Principal"><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></footer>
 <script>document.querySelectorAll('[data-copiar]').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById(b.dataset.copiar);var txt=t.textContent.trim();function ok(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar'},1800)}function sel(){var r=document.createRange();r.selectNodeContents(t);var s=getSelection();s.removeAllRanges();s.addRange(r)}try{navigator.clipboard.writeText(txt).then(ok,sel)}catch(e){sel()}})});</script>
 
 
+<a class="wa-flot" href="https://wa.me/584142651995?text=Hola%2C%20Yuraima.%20Te%20escribo%20desde%20tu%20web." target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.9 2 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.7 12.7-12.6S23 3 16 3zm0 23.1c-2 0-3.9-.5-5.6-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5.3 9.8 10.1 5.1 16 5.1s10.7 4.7 10.7 10.6S21.9 26.1 16 26.1zm5.9-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2s0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6s0-.4 0-.6-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.1 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg></a>
 </body>
 </html>
