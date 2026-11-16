@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sala de prensa · Yuraima Mercado</title>
+<meta name="description" content="Sala de prensa de Yuraima Mercado: biografía corta y larga, fotos en alta, temas de conferencia y contacto para medios.">
+<link rel="canonical" href="https://yuraimamercado.com/prensa/">
+<meta property="og:title" content="Sala de prensa · Yuraima Mercado">
+<meta property="og:description" content="Sala de prensa de Yuraima Mercado: biografía corta y larga, fotos en alta, temas de conferencia y contacto para medios.">
+<meta property="og:image" content="https://yuraimamercado.com/img/retrato.jpg">
+<meta property="og:url" content="https://yuraimamercado.com/prensa/">
+<meta property="og:locale" content="es_VE">
+<link rel="icon" href="/img/ym-negro.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap">
+<style>
+/* Composición editorial: columna de lectura generosa, un riel izquierdo con la etiqueta de cada bloque,
+   titulares en serif que siempre cierran con el punto amarillo de la marca. Blanco, tinta y un solo acento. */
+:root{
+  --paper:#FBFAF7; --ink:#171614; --muted:#6A665E; --line:#E4E1D9; --soft:#F3F1EB; --dot:#EDB41E; --dot-ink:#8A6400;
+  --display:"Newsreader", "Iowan Old Style", Georgia, serif;
+  --body:"Figtree", "Helvetica Neue", Arial, sans-serif;
+  --w:1080px; --read:40rem;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141311; --ink:#EEEBE4; --muted:#A39E93; --line:#2D2B27; --soft:#1C1B18; --dot:#EDB41E; --dot-ink:#F2C548; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#141311; --ink:#EEEBE4; --muted:#A39E93; --line:#2D2B27; --soft:#1C1B18; --dot:#EDB41E; --dot-ink:#F2C548; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.62;margin:0;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--w);margin:0 auto;padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+
+/* Cabecera */
+.top{border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:22px;flex-wrap:wrap}
+.marca{font-family:var(--display);font-size:1.3rem;font-weight:400;letter-spacing:-.01em;text-decoration:none;white-space:nowrap}
+.dot{color:var(--dot)}
+.nav{display:flex;gap:26px;flex-wrap:wrap}
+.nav a{font-size:.88rem;font-weight:500;text-decoration:none;color:var(--muted);padding-block:4px;border-bottom:1.5px solid transparent;transition:color .2s,border-color .2s}
+.nav a:hover,.nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--dot)}
+@media (max-width:760px){
+  .top .wrap{gap:12px;padding-block:16px}
+  .nav{gap:18px;flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px;scrollbar-width:none}
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{white-space:nowrap}
+}
+
+/* Tipografía */
+.eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.02em;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.2rem, 5.2vw, 4.2rem);line-height:1.0;font-weight:300}
+h2{font-size:clamp(1.7rem, 3.3vw, 2.5rem);line-height:1.06;font-weight:300}
+h3{font-size:clamp(1.3rem, 2vw, 1.6rem);line-height:1.15}
+p{margin:0;max-width:var(--read)}
+.lead{font-size:clamp(1.05rem, 1.4vw, 1.18rem);line-height:1.55;color:var(--ink)}
+.muted{color:var(--muted)}
+.prose{display:grid;gap:1.1em}
+em.serif{font-family:var(--display);font-style:italic;font-size:1.1em}
+
+/* Botones y enlaces */
+.acciones{display:flex;gap:14px 28px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;font-size:.95rem;padding:14px 26px;border-radius:2px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,.enlace:focus-visible,.nav a:focus-visible,.copiar:focus-visible{outline:2px solid var(--dot);outline-offset:3px}
+.enlace{font-weight:600;font-size:.95rem;text-decoration:underline;text-decoration-color:var(--dot);text-decoration-thickness:2px;text-underline-offset:6px}
+.enlace:hover{text-decoration-thickness:3px}
+
+/* Bloques */
+.bloque{padding-block:clamp(48px, 6.5vw, 88px)}
+.bloque + .bloque{border-top:1px solid var(--line)}
+.split{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px 56px}
+@media (max-width:860px){.split{grid-template-columns:minmax(0,1fr)}}
+.stack{display:grid;gap:28px;min-width:0}
+
+/* Portada */
+.hero{padding-block:clamp(40px, 6vw, 80px) clamp(40px, 5vw, 72px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.8fr);gap:56px;align-items:end}
+@media (max-width:860px){.hero-grid{grid-template-columns:minmax(0,1fr)}}
+.hero .stack{gap:30px}
+.foto{margin:0;background:var(--soft);aspect-ratio:4/5;max-width:min(100%, 420px);width:100%;justify-self:center;display:flex;align-items:flex-end;position:relative;overflow:hidden;border:1px solid var(--line)}
+.foto::before{content:"";position:absolute;width:46%;aspect-ratio:1;border-radius:50%;background:var(--dot);right:-12%;top:-10%;opacity:.9}
+.foto figcaption{position:relative;font-size:.78rem;color:var(--muted);padding:18px 20px;letter-spacing:.02em}
+.foto img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+
+/* Credenciales */
+.sellos{display:flex;flex-wrap:wrap;gap:10px 36px;padding-block:22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sellos span{font-size:.84rem;color:var(--muted)}
+.sellos b{color:var(--ink);font-weight:600}
+
+/* Caminos */
+.caminos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 56px}
+@media (max-width:700px){.caminos{grid-template-columns:minmax(0,1fr)}}
+.camino{display:grid;gap:14px;padding-block:32px;border-top:1px solid var(--ink);align-content:start}
+.camino p{color:var(--muted)}
+
+/* Cita */
+.cita{padding-block:clamp(56px, 8vw, 110px);text-align:left}
+.cita blockquote{margin:0;font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(1.9rem, 4.6vw, 3.6rem);line-height:1.06;letter-spacing:-.02em;max-width:16ch;text-wrap:balance}
+.cita cite{display:block;margin-top:26px;font-style:normal;font-size:.84rem;color:var(--muted)}
+
+/* Filas */
+.filas{display:grid}
+.fila{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) auto;gap:10px 40px;padding-block:24px;border-top:1px solid var(--line);align-items:baseline}
+.fila:last-child{border-bottom:1px solid var(--line)}
+.fila h3{font-size:1.4rem}
+.fila .meta{font-size:.84rem;color:var(--muted);white-space:nowrap}
+@media (max-width:760px){.fila{grid-template-columns:minmax(0,1fr)}.fila .meta{white-space:normal}}
+
+/* Columnas de opinión */
+.columnas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+@media (max-width:860px){.columnas{grid-template-columns:minmax(0,1fr)}}
+.columna{display:grid;gap:12px;align-content:start;text-decoration:none;padding-top:22px;border-top:1px solid var(--line)}
+.columna h3{font-size:1.5rem;transition:color .2s}
+a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);text-decoration-thickness:2px;text-underline-offset:5px}
+.columna .meta{font-size:.8rem;color:var(--muted);letter-spacing:.04em}
+
+/* Etapas */
+.etapas{display:grid;gap:0}
+.etapa{display:grid;grid-template-columns:150px minmax(0,1fr);gap:8px 40px;padding-block:22px;border-top:1px solid var(--line)}
+.etapa:last-child{border-bottom:1px solid var(--line)}
+.etapa .eyebrow{padding-top:6px}
+@media (max-width:600px){.etapa{grid-template-columns:minmax(0,1fr)}}
+
+/* Tipos de influencia / ideas */
+.ideas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 56px}
+@media (max-width:700px){.ideas{grid-template-columns:minmax(0,1fr)}}
+.idea{display:grid;gap:10px;align-content:start}
+.idea h3::before{content:"";display:inline-block;width:.42em;height:.42em;border-radius:50%;background:var(--dot);margin-right:.5em;vertical-align:.18em}
+
+/* Ficha destacada */
+.destacado{background:var(--soft);border:1px solid var(--line);padding:clamp(28px, 4vw, 48px);display:grid;gap:18px}
+.datos{display:flex;flex-wrap:wrap;gap:12px 36px;font-size:.88rem;color:var(--muted)}
+.datos b{display:block;color:var(--ink);font-family:var(--display);font-weight:400;font-size:1.7rem;letter-spacing:-.01em}
+
+/* Clientes */
+.marcas{display:flex;flex-wrap:wrap;gap:12px 32px;font-family:var(--display);font-size:clamp(1.3rem, 2.4vw, 1.8rem);font-weight:300}
+.marcas span:not(:last-child)::after{content:"·";color:var(--dot);margin-left:32px}
+
+/* Contacto */
+.contacto{display:grid;gap:22px}
+.dato{display:grid;gap:6px;padding-block:22px;border-top:1px solid var(--line)}
+.dato .valor{font-family:var(--display);font-size:clamp(1.3rem, 2.8vw, 1.9rem);font-weight:300;letter-spacing:-.01em;word-break:break-word;user-select:all}
+.dato .acciones{gap:10px 24px}
+.copiar{background:none;border:0;padding:0;font:inherit;font-weight:600;font-size:.88rem;color:var(--muted);cursor:pointer;text-decoration:underline;text-underline-offset:5px}
+.copiar:hover{color:var(--ink)}
+
+
+/* Fotografía */
+.galeria{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.galeria figure{margin:0;display:grid;gap:10px}
+.galeria img{width:100%;aspect-ratio:3/4;object-fit:cover;background:var(--soft)}
+.galeria figcaption{font-size:.8rem;color:var(--muted)}
+@media (max-width:760px){.galeria{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ancha{margin:0 auto;display:grid;gap:10px;max-width:540px}
+.ancha img{width:100%;aspect-ratio:3/2;max-height:420px;object-fit:cover;background:var(--soft)}
+.ancha figcaption{font-size:.8rem;color:var(--muted)}
+.logo-ym{width:84px;height:auto}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .logo-ym{filter:invert(1)}}
+:root[data-theme="dark"] .logo-ym{filter:invert(1)}
+
+/* Pie */
+.pie{border-top:1px solid var(--line);padding-block:48px 56px}
+.pie .wrap{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-end}
+.pie .nav a{font-size:.82rem}
+.pie small{color:var(--muted);font-size:.8rem}
+
+/* Entrada suave */
+@keyframes sube{from{opacity:.001;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero .stack > *{animation:sube .8s cubic-bezier(.2,.7,.2,1) both}
+.hero .stack > *:nth-child(2){animation-delay:.08s}
+.hero .stack > *:nth-child(3){animation-delay:.16s}
+.hero .stack > *:nth-child(4){animation-delay:.24s}
+
+.enlace-t{text-decoration:underline;text-decoration-color:var(--dot);text-decoration-thickness:1.5px;text-underline-offset:4px}
+.redes{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.84rem}
+.redes a{text-decoration:none;color:var(--muted);font-weight:500}
+.redes a:hover{color:var(--ink)}
+.wa-flot{position:fixed;right:18px;bottom:18px;z-index:50;width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.18);transition:transform .2s}
+.wa-flot:hover{transform:scale(1.06)}
+.wa-flot svg{width:28px;height:28px;fill:#fff}
+.form{display:grid;gap:18px;max-width:40rem}
+.form label{display:grid;gap:6px;font-size:.84rem;font-weight:600;color:var(--ink)}
+.form input,.form textarea{font:inherit;font-weight:400;font-size:1rem;padding:12px 14px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:2px}
+.form textarea{min-height:110px;resize:vertical}
+.form .doble{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:600px){.form .doble{grid-template-columns:1fr}}
+.form button{justify-self:start;border:0;cursor:pointer}
+.aviso-ok{background:var(--soft);border:1px solid var(--line);padding:18px 20px}
+
+.cifras{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 36px;padding-block:34px 26px}
+.cifra b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(1.9rem,3.4vw,2.6rem);letter-spacing:-.01em;line-height:1.05;color:var(--ink)}
+.cifra b .dot{color:var(--dot)}
+.cifra span{display:block;margin-top:8px;font-size:.86rem;color:var(--muted);line-height:1.4}
+@media (max-width:760px){.cifras{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.medios{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+.medio{display:grid;gap:8px;align-content:start;text-decoration:none;padding-block:20px;border-top:1px solid var(--line)}
+.medio .meta{font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.medio h3{font-size:1.2rem;transition:color .2s}
+.medio:hover h3{color:var(--muted)}
+@media (max-width:760px){.medios{grid-template-columns:minmax(0,1fr)}}
+.revista{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:32px;align-items:center;padding:34px;background:var(--soft);border:1px solid var(--line);text-decoration:none}
+.revista .meta{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.revista h3{font-family:var(--display);font-weight:400;font-size:clamp(1.7rem,3.2vw,2.4rem);line-height:1.1;margin:10px 0 12px}
+.revista .portada{aspect-ratio:3/4;background:var(--ink);color:var(--paper);display:flex;flex-direction:column;justify-content:space-between;padding:18px}
+.revista .portada small{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+.revista .portada strong{font-family:var(--display);font-weight:400;font-size:1.5rem;line-height:1.05}
+@media (max-width:700px){.revista{grid-template-columns:minmax(0,1fr)}.revista .portada{max-width:200px}}
+.descargas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.descargas a{display:grid;gap:8px;text-decoration:none;font-size:.84rem;color:var(--muted)}
+.descargas img{width:100%;aspect-ratio:3/4;object-fit:cover;background:var(--soft);border:1px solid var(--line)}
+@media (max-width:760px){.descargas{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.bio{padding:24px;border:1px solid var(--line);background:var(--soft)}
+</style>
+
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/prensa/" data-v="prensa" aria-current="page">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></header><main>
+<section class="hero"><div class="wrap hero-grid">
+  <div class="stack">
+    <p class="eyebrow">Sala de prensa</p>
+    <h1>Todo lo que un medio necesita, en un solo lugar<span class="dot">.</span></h1>
+    <p class="lead">Biografía, fotos en alta resolución, temas de conferencia y contacto directo. Este material está listo para usarse en notas, entrevistas, programas de eventos y presentaciones.</p>
+    <div class="acciones"><a class="btn" href="mailto:hola@yuraimamercado.com?subject=Solicitud%20de%20prensa">Solicitar entrevista</a><a class="enlace" href="#fotos">Descargar fotos</a></div>
+  </div>
+  <figure class="foto"><img src="/img/retrato.jpg" alt="Retrato de Yuraima Mercado"></figure>
+</div></section>
+
+<section class="bloque"><div class="wrap split">
+  <p class="eyebrow">Biografía corta</p>
+  <div class="stack">
+    <div class="bio prose"><p id="bio-corta">Yuraima Mercado es comunicadora social, mención Periodismo, estratega en comunicación, relaciones públicas e influencia y fundadora y directora estratégica de YM Agency, en Caracas. Con más de 20 años de trayectoria y más de 200 clientes, creó y coordina el Diplomado en Relaciones Públicas e Influencia de la UNIMET y escribe en El Estímulo y en su boletín Desde la Verdad.</p></div>
+    <div class="acciones"><button class="copiar enlace" type="button" data-copiar="bio-corta">Copiar</button></div>
+  </div>
+</div></section>
+
+<section class="bloque"><div class="wrap split">
+  <p class="eyebrow">Biografía larga</p>
+  <div class="stack">
+    <div class="bio prose" id="bio-larga"><p>Yuraima Mercado es venezolana, nacida en Valle de la Pascua, Guárico, y radicada en Caracas. Es comunicadora social, mención Periodismo, de la Universidad Santa María y egresada del Programa de Dirección de Comunicaciones del IESA con Dircom Panamá.</p>
+    <p>Su carrera empezó en la radio, como talento, locutora y productora, y siguió en la industria musical, donde manejó la prensa de artistas como Desorden Público y Rawayana. Pasó luego al consumo masivo con Ron Santa Teresa y Diageo, y acompañó lanzamientos del ecosistema emprendedor como Cashea y Ridery.</p>
+    <p>Fundó YM Agency, firma de comunicaciones y relaciones públicas que trabaja con marcas como Mercado Libre, Fiat y Bajo el Árbol, y que en 2026 ganó el Premio CIMA en Relaciones Públicas con el caso La Clave. Creó y coordina el Diplomado en Relaciones Públicas e Influencia de la UNIMET, escribe una columna de opinión en El Estímulo y publica cada semana el boletín Desde la Verdad en LinkedIn.</p></div>
+    <div class="acciones"><button class="copiar enlace" type="button" data-copiar="bio-larga">Copiar</button></div>
+  </div>
+</div></section>
+
+<section class="bloque" id="fotos"><div class="wrap split">
+  <p class="eyebrow">Fotos en alta</p>
+  <div class="stack">
+    <div class="descargas">
+      <a href="/img/retrato.jpg" download="yuraima-mercado-retrato.jpg"><img src="/img/retrato.jpg" alt="Retrato de Yuraima Mercado" loading="lazy">Retrato</a>
+      <a href="/img/sofa.jpg" download="yuraima-mercado-sofa.jpg"><img src="/img/sofa.jpg" alt="Yuraima Mercado sentada en un sofá blanco" loading="lazy" style="object-position:50% 62%">Retrato en sofá</a>
+      <a href="/img/sobre-mi.jpg" download="yuraima-mercado-caracas.jpg"><img src="/img/sobre-mi.jpg" alt="Yuraima Mercado con Caracas de fondo" loading="lazy">Caracas, blanco y negro</a>
+      <a href="/img/panel.jpg" download="yuraima-mercado-panel.jpg"><img src="/img/panel.jpg" alt="Yuraima Mercado en un panel" loading="lazy">En escenario</a>
+    </div>
+    <p class="muted" style="font-size:.86rem">Crédito sugerido: cortesía de Yuraima Mercado. Logos de YM Agency: <a class="enlace-t" href="/img/ym-negro.png" download>negro</a> y <a class="enlace-t" href="/img/ym-amarillo.png" download>amarillo</a>.</p>
+  </div>
+</div></section>
+
+<section class="bloque"><div class="wrap split">
+  <p class="eyebrow">Ficha de conferencista</p>
+  <div class="filas">
+    <div class="fila"><h3>La confianza se traslada</h3><p class="muted">Cómo la prensa, el relacionamiento y la influencia llevan la confianza de quien ya la tiene hacia la marca que la necesita.</p><span class="meta">Conferencia</span></div>
+    <div class="fila"><h3>Marcas que existen para la inteligencia artificial</h3><p class="muted">Lo que medios y personas dicen de una marca es lo que la IA aprende y responde.</p><span class="meta">Conferencia</span></div>
+    <div class="fila"><h3>Marca personal y autoridad</h3><p class="muted">Ser más persona que personaje: cómo convertir trayectoria en autoridad reconocida.</p><span class="meta">Clase magistral</span></div>
+    <div class="fila"><h3>Formatos</h3><p class="muted">Conferencias, paneles, moderación, clases magistrales y sesiones ejecutivas in company, en Venezuela y en Hispanoamérica.</p><span class="meta">Escenarios</span></div>
+  </div>
+</div></section>
+
+<section class="bloque"><div class="wrap split">
+  <p class="eyebrow">En medios</p>
+  <div class="medios">
+    <a class="medio" href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener"><span class="meta">El Estímulo · 2026</span><h3>Columna de opinión de Yuraima Mercado</h3></a>
+    <a class="medio" href="https://www.unimet.edu.ve/unimet-abre-un-nuevo-diplomado-en-relaciones-publicas-e-influencia-para-profesionalizar-a-los-nuevos-estrategas-de-la-reputacion-y-la-influencia-en-venezuela/" target="_blank" rel="noopener"><span class="meta">UNIMET · 2026</span><h3>UNIMET abre un nuevo Diplomado en Relaciones Públicas e Influencia</h3></a>
+    <a class="medio" href="https://contrapunto.com/nacional/universidades/unimet-abre-diplomado-en-relaciones-publicas-e-influencia/" target="_blank" rel="noopener"><span class="meta">Contrapunto · 2026</span><h3>UNIMET abre Diplomado en Relaciones Públicas e Influencia</h3></a>
+    <a class="medio" href="https://www.publicidadymercadeo.net/ym-agency-ideas-ingeniosas-y-disruptivas/" target="_blank" rel="noopener"><span class="meta">Revista P&amp;M · 2024</span><h3>YM Agency: ideas ingeniosas y disruptivas</h3></a>
+    <a class="medio" href="https://www.publicidadymercadeo.net/la-escuelita-regresa/" target="_blank" rel="noopener"><span class="meta">Revista P&amp;M · 2025</span><h3>Regresa la Escuelita de Yuraima Mercado</h3></a>
+    <a class="medio" href="https://las100protagonistas.com/yuraima-mercado/" target="_blank" rel="noopener"><span class="meta">Las 100 Protagonistas · 2024</span><h3>Perfil de Yuraima Mercado</h3></a>
+  </div>
+</div></section>
+
+<section class="cita"><div class="wrap stack">
+  <blockquote>Prensa y organizadores de eventos, escríbeme directo<span class="dot">.</span></blockquote>
+  <div class="acciones"><a class="btn" href="mailto:hola@yuraimamercado.com?subject=Solicitud%20de%20prensa">hola@yuraimamercado.com</a><a class="enlace" href="https://wa.me/584142651995?text=Hola%2C%20Yuraima.%20Te%20escribo%20por%20un%20tema%20de%20prensa." target="_blank" rel="noopener">WhatsApp +58 414 265 1995</a></div>
+</div></section>
+</main>
+<footer class="pie"><div class="wrap"><div class="stack" style="gap:10px"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><small>Estrategia en Comunicación, Relaciones Públicas e Influencia · Caracas, Venezuela · © 2026</small><a class="enlace" href="/ia/" style="font-size:.82rem">Ficha para la IA</a><div class="redes"><a href="https://www.instagram.com/yuraimamercado/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/yuraimamercado/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7323002961196994560" target="_blank" rel="noopener">Desde la Verdad</a><a href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener">El Estímulo</a></div></div><nav class="nav" aria-label="Principal"><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></footer>
+<script>document.querySelectorAll('[data-copiar]').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById(b.dataset.copiar);var txt=t.textContent.trim();function ok(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar'},1800)}function sel(){var r=document.createRange();r.selectNodeContents(t);var s=getSelection();s.removeAllRanges();s.addRange(r)}try{navigator.clipboard.writeText(txt).then(ok,sel)}catch(e){sel()}})});</script>
+
+
+<a class="wa-flot" href="https://wa.me/584142651995?text=Hola%2C%20Yuraima.%20Te%20escribo%20desde%20tu%20web." target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.9 2 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.7 12.7-12.6S23 3 16 3zm0 23.1c-2 0-3.9-.5-5.6-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5.3 9.8 10.1 5.1 16 5.1s10.7 4.7 10.7 10.6S21.9 26.1 16 26.1zm5.9-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2s0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6s0-.4 0-.6-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.1 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg></a>
+</body>
+</html>

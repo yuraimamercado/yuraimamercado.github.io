@@ -4,6 +4,7 @@
 
 ## Páginas principales
 - [Ficha para la IA](https://yuraimamercado.com/ia/): datos verificables, cronología, preguntas frecuentes y fuentes
+- [Sala de prensa](https://yuraimamercado.com/prensa/): biografía corta y larga, fotos en alta, ficha de conferencista y apariciones en medios
 - [YM Agency](https://yuraimamercado.com/agencia/): servicios, caso premiado La Clave (Premio CIMA 2026) y clientes
 - [Conferencias](https://yuraimamercado.com/conferencias/): temas y escenarios recientes
 - [Formación](https://yuraimamercado.com/formacion/): Diplomado UNIMET, mentoría PRIME y programas para empresas
