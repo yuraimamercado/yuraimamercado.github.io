@@ -215,6 +215,40 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 .descargas img{width:100%;aspect-ratio:3/4;object-fit:cover;background:var(--soft);border:1px solid var(--line)}
 @media (max-width:760px){.descargas{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .bio{padding:24px;border:1px solid var(--line);background:var(--soft)}
+
+/* Pulido v2: lectura en teléfono y piezas gráficas */
+.cifra > span{display:block;margin-top:10px;font-size:.86rem;color:var(--muted);line-height:1.4;padding-top:10px;border-top:2px solid var(--dot);max-width:22ch}
+.cifra b .dot{display:inline;margin:0;padding:0;border:0}
+.cita{position:relative;overflow:hidden}
+.cita::after{content:"";position:absolute;right:-90px;top:50%;width:min(52vw,420px);aspect-ratio:1;transform:translateY(-50%);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none' stroke='%23EDB41E' stroke-width='1.2'%3E%3Ccircle cx='200' cy='200' r='40'/%3E%3Ccircle cx='200' cy='200' r='80' opacity='.75'/%3E%3Ccircle cx='200' cy='200' r='120' opacity='.5'/%3E%3Ccircle cx='200' cy='200' r='160' opacity='.3'/%3E%3Ccircle cx='200' cy='200' r='198' opacity='.15'/%3E%3C/svg%3E") center/contain no-repeat;pointer-events:none;opacity:.9}
+.cita .wrap{position:relative;z-index:1}
+.ejes{display:block;width:100%;max-width:440px;height:auto;margin-top:8px}
+.ejes text{font-family:var(--body,inherit);font-size:13px;fill:var(--ink);letter-spacing:.02em}
+.ejes .centro{font-family:var(--display);font-style:italic;font-size:15px}
+.etapas{position:relative}
+.etapa{position:relative;padding-left:22px}
+.etapa::before{content:"";position:absolute;left:0;top:30px;width:9px;height:9px;border-radius:50%;background:var(--dot)}
+.etapa::after{content:"";position:absolute;left:4px;top:42px;bottom:-30px;width:1px;background:var(--line)}
+.etapa:last-child::after{display:none}
+@media (max-width:760px){
+  body{font-size:16.5px}
+  .hero{padding-block:28px 36px}
+  .hero-grid{gap:28px}
+  .hero .foto{max-width:300px;aspect-ratio:4/5;justify-self:start}
+  .bloque{padding-block:44px}
+  .cita{padding-block:52px}
+  .cita::after{right:-140px;width:300px;opacity:.55}
+  .split{gap:18px}
+  .cifras{gap:26px 20px;padding-block:28px 22px}
+  .cifra b{font-size:2rem}
+  .sellos{gap:10px 20px}
+  .sellos span{flex:1 1 100%}
+  .nav{flex-wrap:wrap;overflow:visible;gap:8px 16px}
+  .nav a{font-size:.84rem}
+  .caminos .camino{padding-block:26px}
+  .medio h3{font-size:1.12rem}
+  .wa-flot{width:52px;height:52px;right:14px;bottom:18px}
+}
 </style>
 
 </head>
