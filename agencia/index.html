@@ -141,6 +141,12 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 .caso-galeria figure{margin:0;display:grid;gap:8px}.caso-galeria img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--soft)}
 .caso-galeria figcaption{font-size:.78rem;color:var(--muted)}
 @media (max-width:600px){.caso-galeria{grid-template-columns:minmax(0,1fr)}}
+.carrusel-wrap{position:relative;min-width:0}
+.carrusel{display:flex;align-items:flex-start;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:12px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.carrusel>*{flex:0 0 min(88%,640px);scroll-snap-align:start;align-content:start}
+.carrusel-nav{display:flex;gap:10px;align-items:center;margin-top:10px;font-size:.84rem;color:var(--muted)}
+.carrusel-nav button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:transparent;color:inherit;font-size:1.1rem;cursor:pointer}
+.carrusel-nav button:hover{border-color:currentColor}
 .destacado{background:var(--soft);border:1px solid var(--line);padding:clamp(28px, 4vw, 48px);display:grid;gap:18px}
 .datos{display:flex;flex-wrap:wrap;gap:12px 36px;font-size:.88rem;color:var(--muted)}
 .datos b{display:block;color:var(--ink);font-family:var(--display);font-weight:400;font-size:1.7rem;letter-spacing:-.01em}
@@ -279,19 +285,9 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
     <div class="fila"><h3>Jefatura de prensa</h3><p class="muted">Notas, convocatorias y giras de medios para que las buenas noticias lleguen lejos.</p><span class="meta"></span></div>
     <div class="fila"><h3>Lanzamientos</h3><p class="muted">Empresas nuevas y productos de compañías consolidadas.</p><span class="meta"></span></div>
     <div class="fila"><h3>Relacionamiento e influencia</h3><p class="muted">Embajadores de marca, líderes de opinión y creadores que suman confianza.</p><span class="meta"></span></div>
-    <div class="fila"><h3>Experiencias que amplifican</h3><p class="muted">Conceptualización y producción de encuentros memorables alrededor de una noticia.</p><span class="meta"></span></div>
+    <div class="fila"><h3>Experiencias que amplifican</h3><p class="muted">Conceptualización, diseño y producción integral de eventos, lanzamientos y encuentros memorables alrededor de una noticia: concepto, logística, proveedores, invitados y prensa en un solo equipo.</p><span class="meta"></span></div>
     <div class="fila"><h3>Juntas consultivas</h3><p class="muted">Acompañamiento estratégico a equipos directivos y de mercadeo.</p><span class="meta"></span></div>
     <div class="fila"><h3>Método Anticipa</h3><p class="muted">Análisis de escenarios, preparación de vocería y gestión de riesgos antes de cada anuncio.</p><span class="meta"></span></div>
-  </div>
-</div></section>
-
-<section class="bloque"><div class="wrap split">
-  <p class="eyebrow">Caso premiado</p>
-  <div class="destacado">
-    <figure class="ancha"><img src="/img/cima.jpg" alt="Yuraima Mercado recibe el Premio CIMA 2026 en Relaciones Públicas junto al equipo de Bajo el Árbol" style="object-position:50% 45%"></figure>
-    <p class="eyebrow">Premio CIMA 2026 · Relaciones Públicas</p>
-    <h2>La Clave, cuando una fiesta se volvió cultura<span class="dot">.</span></h2>
-    <p>Junto a Bajo el Árbol, convertimos una fiesta en un fenómeno cultural a través de una estrategia relacional. El caso demuestra que las relaciones públicas tienen el poder de convertir experiencias en cultura, conexiones en oportunidades y relaciones en reputación.</p>
   </div>
 </div></section>
 
@@ -306,6 +302,14 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 <section class="bloque"><div class="wrap split">
   <p class="eyebrow">Casos</p>
   <div class="stack" style="gap:28px">
+    <div class="carrusel-wrap">
+      <div class="carrusel">
+    <div class="destacado">
+      <figure class="caso-foto"><img src="/img/cima.jpg" alt="Yuraima Mercado recibe el Premio CIMA 2026 en Relaciones Públicas junto al equipo de Bajo el Árbol" style="object-position:50% 45%"></figure>
+      <p class="eyebrow">Premio CIMA 2026 · Relaciones Públicas</p>
+      <h2>La Clave, cuando una fiesta se volvió cultura<span class="dot">.</span></h2>
+      <p>Junto a Bajo el Árbol, convertimos una fiesta en un fenómeno cultural a través de una estrategia relacional. El caso demuestra que las relaciones públicas tienen el poder de convertir experiencias en cultura, conexiones en oportunidades y relaciones en reputación.</p>
+    </div>
     <div class="destacado">
       <figure class="caso-foto"><img src="/img/branson-tarima.jpg" alt="Sir Richard Branson conversa con Esteban Torbar en la tarima del Startup Venezuela Summit 2026 ante cientos de asistentes" loading="lazy"></figure>
       <div class="caso-galeria">
@@ -316,7 +320,6 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
       <p class="eyebrow">Startup Venezuela Summit 2026 · Prensa y relaciones públicas</p>
       <h2>Sir Richard Branson, en su primera visita a Venezuela<span class="dot">.</span></h2>
       <p>Llevamos la prensa y las relaciones públicas de la sexta edición del <a class="enlace-t" href="https://startupvenezuelasummit.com/" target="_blank" rel="noopener">Startup Venezuela Summit</a>, en Caracas. Organizamos la rueda de prensa del fundador, Esteban Torbar, la convocatoria a la charla inaugural de Sir Richard Branson y un encuentro cerrado del fundador de Virgin Group con un grupo reducido de periodistas.</p>
-      <figure class="testimonio"><blockquote>«Trabajar con Yuraima Mercado fue una experiencia extraordinaria. Su profesionalismo, compromiso y enorme capacidad de convocatoria fueron fundamentales para lograr una cobertura de medios excepcional, atraer invitados de primer nivel y alcanzar un récord histórico de asistencia en el Startup Venezuela Summit 2026. Yuraima no solo hizo un trabajo impecable, sino que se involucró con verdadera pasión en lo que estábamos construyendo. ¡Fue una gran aliada en el éxito de esta edición!»</blockquote><figcaption><b>Esteban Torbar</b> · Fundador, Startup Venezuela Summit</figcaption></figure>
     </div>
     <div class="destacado">
       <figure class="caso-foto"><img src="/img/fiat-embajadores.jpg" alt="Amanda Dudamel y Marcos Noriega junto al equipo de Fiat y de YM Agency en el concesionario Autodealers" loading="lazy" style="object-position:50% 35%"></figure>
@@ -328,6 +331,10 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
       <h2>Amanda Dudamel y Marcos Noriega, la nueva cara de Fiat<span class="dot">.</span></h2>
       <p>Llevamos de principio a fin el programa de embajadores de marca de Fiat Venezuela: la evaluación y curaduría de perfiles, la selección, la contratación y el seguimiento de la relación con Amanda Dudamel y el creador de contenido venezolano Marcos Noriega. Con Fiat también llevamos las relaciones públicas de la marca y acompañamos la vocería de su dirección general.</p>
     </div>
+      </div>
+      <div class="carrusel-nav"><button type="button" data-dir="-1" aria-label="Anterior">←</button><button type="button" data-dir="1" aria-label="Siguiente">→</button><span>Desliza para ver más</span></div>
+    </div>
+    <figure class="testimonio"><blockquote>«Trabajar con Yuraima Mercado fue una experiencia extraordinaria. Su profesionalismo, compromiso y enorme capacidad de convocatoria fueron fundamentales para lograr una cobertura de medios excepcional, atraer invitados de primer nivel y alcanzar un récord histórico de asistencia en el Startup Venezuela Summit 2026. Yuraima no solo hizo un trabajo impecable, sino que se involucró con verdadera pasión en lo que estábamos construyendo. ¡Fue una gran aliada en el éxito de esta edición!»</blockquote><figcaption><b>Esteban Torbar</b> · Fundador, Startup Venezuela Summit</figcaption></figure>
     <div class="filas">
       <div class="fila"><h3>Mercado Libre</h3><p class="muted">Relaciones públicas y vocería de Mercado Libre en Venezuela.</p><span class="meta">Tecnología</span></div>
       <div class="fila"><h3>Diageo</h3><p class="muted">Más de tres años al frente de las relaciones públicas de su portafolio en Venezuela: Johnnie Walker, Buchanan's, Gordon's, Smirnoff, Pampero y Cacique.</p><span class="meta">Consumo masivo</span></div>
@@ -348,5 +355,6 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 
 
 <a class="wa-flot" href="https://wa.me/584142651995?text=Hola%2C%20Yuraima.%20Te%20escribo%20desde%20tu%20web." target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.9 2 7L3 29l6.6-2.2c2 1.1 4.2 1.7 6.4 1.7 7 0 12.7-5.7 12.7-12.6S23 3 16 3zm0 23.1c-2 0-3.9-.5-5.6-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5.3 9.8 10.1 5.1 16 5.1s10.7 4.7 10.7 10.6S21.9 26.1 16 26.1zm5.9-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2s0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6s0-.4 0-.6-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.1 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg></a>
+<script>document.querySelectorAll(".carrusel-wrap").forEach(function(w){var c=w.querySelector(".carrusel");w.querySelectorAll("[data-dir]").forEach(function(b){b.addEventListener("click",function(){var it=c.firstElementChild;var step=it?it.getBoundingClientRect().width+18:300;c.scrollBy({left:step*(+b.dataset.dir),behavior:"smooth"})})})});</script>
 </body>
 </html>
