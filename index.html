@@ -295,6 +295,18 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 .siguiente .t{display:block;font-family:var(--display);font-size:clamp(1.25rem,2.2vw,1.6rem);font-weight:300;margin-top:4px}
 .siguiente .flecha{font-size:1.6rem;transition:transform .2s}
 .siguiente a:hover .flecha{transform:translateX(6px)}
+/* Sistema tipográfico v4: una sola escala para todo el sitio */
+:root{--t-h1:clamp(2.1rem,3.8vw,3rem);--t-h2:clamp(1.5rem,2.4vw,1.9rem);--t-h3:1.18rem;--t-p:1rem;--t-s:.82rem;--t-l:.72rem}
+h1,.cita blockquote{font-size:var(--t-h1)}
+h2,.cifra b,.revista h3,.columna h3,.siguiente .t{font-size:var(--t-h2)}
+h3,.fila h3,.medio h3,.medios.medios-uno .medio h3,.tarjeta h3,.recorrido b,.ideas-lista h3,.carrusel .destacado h2,.testimonio .destaca,.dato .valor,.datos b,.marcas,.revista .portada strong{font-size:var(--t-h3)}
+p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio blockquote,.hilo,.cita .cita-texto,.datos,.fila p,.medio p,.tarjeta p{font-size:var(--t-p);line-height:1.6}
+.foto figcaption,.galeria figcaption,.ancha figcaption,.caso-galeria figcaption,.fila .meta,.columna .meta,.medio .meta,.revista .meta,.sellos span,.testimonio figcaption,.cifra span,.cifra > span,.descargas a,.redes,.form label,.cita cite,.copiar,.carrusel-nav,.pie small{font-size:var(--t-s)}
+.eyebrow,.tarjeta .eyebrow,.carrusel .destacado .eyebrow,.recorrido .anio,.revista .portada small,.testimonio .ini{font-size:var(--t-l)}
+.riel .num,.eyebrow .cap{font-family:var(--display);font-weight:300;font-size:2.6rem;line-height:1;color:var(--ink);letter-spacing:0;text-transform:none}
+.eyebrow .cap{display:block;margin:0 0 10px}
+.eyebrow .cap::after{content:".";color:var(--dot)}
+@media (max-width:760px){.riel .num,.eyebrow .cap{font-size:2rem}}
 </style>
 
 </head>
