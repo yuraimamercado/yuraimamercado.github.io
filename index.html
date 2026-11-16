@@ -259,113 +259,169 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
   .medio h3{font-size:1.12rem}
   .wa-flot{width:52px;height:52px;right:14px;bottom:18px}
 }
+/* Historia v3: capítulos, recorrido y tarjetas */
+.eyebrow .cap{display:inline-block;color:var(--dot-ink);margin-right:.6em}
+.riel{display:grid;gap:6px;align-content:start}
+.riel .num{font-family:var(--display);font-weight:300;font-size:2.6rem;line-height:1;color:var(--ink)}
+.riel .num::after{content:".";color:var(--dot)}
+@media (max-width:860px){.riel{display:flex;align-items:baseline;gap:12px}.riel .num{font-size:2rem}}
+.dos{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px 36px;align-items:center}
+.dos.dos-ancho{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+@media (max-width:760px){.dos,.dos.dos-ancho{grid-template-columns:minmax(0,1fr)}}
+.foto-cap{margin:0}.foto-cap img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--soft)}
+.recorrido{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px}
+.recorrido li{display:grid;gap:4px;align-content:start;padding:14px 0 16px;border-top:2px solid var(--ink);position:relative}
+.recorrido li::before{content:"";position:absolute;top:-6px;left:0;width:10px;height:10px;border-radius:50%;background:var(--dot)}
+.recorrido .anio{font-size:.74rem;font-weight:600;letter-spacing:.14em;color:var(--muted)}
+.recorrido b{font-family:var(--display);font-weight:400;font-size:1.15rem;line-height:1.2}
+.recorrido p{font-size:.9rem;color:var(--muted);line-height:1.5}
+@media (max-width:760px){.recorrido{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:6px}.recorrido li{flex:0 0 70%;scroll-snap-align:start}}
+.ideas-lista{display:grid;gap:16px}
+.ideas-lista h3{font-size:1.12rem}
+.ideas-lista h3::before{content:"";display:inline-block;width:.42em;height:.42em;border-radius:50%;background:var(--dot);margin-right:.5em;vertical-align:.18em}
+.ideas-lista p{font-size:.92rem;margin-top:4px}
+.tarjetas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tarjeta{display:grid;gap:8px;align-content:start;text-decoration:none}
+.tarjeta img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--soft);transition:opacity .2s}
+.tarjeta .eyebrow{font-size:.66rem;margin-top:4px}
+.tarjeta h3{font-size:1.08rem;line-height:1.25}
+.tarjeta:hover img{opacity:.88}.tarjeta:hover h3{text-decoration:underline;text-decoration-color:var(--dot);text-decoration-thickness:2px;text-underline-offset:4px}
+@media (max-width:760px){.tarjetas{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:6px}.tarjeta{flex:0 0 76%;scroll-snap-align:start}}
+.medios.medios-uno{grid-template-columns:minmax(0,1fr)}
+.medios.medios-uno .medio h3{font-size:1.02rem}
+.hilo{font-family:var(--display);font-style:italic;font-size:1.08rem;color:var(--muted);margin:0}
+.siguiente{border-top:1px solid var(--line);background:var(--soft)}
+.siguiente a{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:24px;text-decoration:none}
+.siguiente .t{display:block;font-family:var(--display);font-size:clamp(1.25rem,2.2vw,1.6rem);font-weight:300;margin-top:4px}
+.siguiente .flecha{font-size:1.6rem;transition:transform .2s}
+.siguiente a:hover .flecha{transform:translateX(6px)}
 </style>
 
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></header><main>
+<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></header><main>
 <section class="hero"><div class="wrap hero-grid">
   <div class="stack">
-    <p class="eyebrow">Estrategia en Comunicación, Relaciones Públicas e Influencia</p>
+    <p class="eyebrow"><span class="cap">01</span> Quién soy</p>
     <h1>Que otros validen lo que vales<span class="dot">.</span></h1>
-    <p class="lead">Convierto trayectoria en autoridad reconocida. Veinte años conectando personas, marcas, medios y experiencias para que el valor de cada una llegue a quienes necesitan conocerlo. Soy venezolana y trabajo desde Caracas para marcas de Venezuela y la región.</p>
-    <div class="acciones"><a class="btn" href="/contacto/">Conversemos</a><a class="enlace" href="/pensamiento/">Leer Desde la Verdad</a></div>
+    <p class="lead">Soy Yuraima Mercado, estratega en comunicación, relaciones públicas e influencia. Hace veinte años convierto trayectorias en autoridad reconocida: conecto personas, marcas, medios y experiencias para que el valor de cada una llegue a quienes necesitan conocerlo. Soy venezolana y trabajo desde Caracas.</p>
+    <div class="acciones"><a class="btn" href="/contacto/">Conversemos</a><a class="enlace" href="#historia">Conoce la historia</a></div>
   </div>
   <figure class="foto"><img src="/img/sofa.jpg" alt="Yuraima Mercado ríe sentada en un sofá blanco frente a una escultura roja" style="object-position:50% 62%"></figure>
 </div></section>
 
 <div class="wrap"><div class="cifras" aria-label="Trayectoria en cifras">
-  <div class="cifra"><b>20+<span class="dot">.</span></b><span>Más de 20 años en comunicación, periodismo y relaciones públicas</span></div>
-  <div class="cifra"><b>200+<span class="dot">.</span></b><span>Más de 200 clientes entre marcas, empresas y talentos</span></div>
-  <div class="cifra"><b>CIMA<span class="dot">.</span></b><span>Premio CIMA 2026 en Relaciones Públicas con La Clave</span></div>
-  <div class="cifra"><b>UNIMET<span class="dot">.</span></b><span>Creadora del primer Diplomado en Relaciones Públicas e Influencia de Venezuela, en la UNIMET</span></div>
+  <div class="cifra"><b>20+<span class="dot">.</span></b><span>Años en comunicación, periodismo y relaciones públicas</span></div>
+  <div class="cifra"><b>200+<span class="dot">.</span></b><span>Clientes entre marcas, empresas y talentos</span></div>
+  <div class="cifra"><b>CIMA<span class="dot">.</span></b><span>Premio 2026 en Relaciones Públicas con La Clave</span></div>
+  <div class="cifra"><b>UNIMET<span class="dot">.</span></b><span>Creadora del primer Diplomado en RR. PP. e Influencia de Venezuela</span></div>
 </div></div>
 
-<div class="wrap"><div class="sellos">
-  <span><b>Premio CIMA 2026</b> · Relaciones Públicas</span>
-  <span><b>Columnista</b> · <a class="enlace-t" href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener">El Estímulo</a></span>
-  <span><b>Diplomado en RR. PP. e Influencia</b> · UNIMET</span>
-  <span><b>Dirección de Comunicaciones</b> · IESA y Dircom Panamá</span>
-</div></div>
-
-<section class="bloque"><div class="wrap split">
-  <p class="eyebrow">Mi universo</p>
+<section class="bloque capitulo" id="historia"><div class="wrap split">
+  <div class="riel"><span class="num">02</span><p class="eyebrow">De dónde vengo</p></div>
   <div class="stack">
-    <h2>Cuatro caminos que llevan al mismo oficio<span class="dot">.</span></h2>
-    <div class="caminos">
-      <div class="camino"><h3>Pensamiento</h3><p><a class="enlace-t" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7323002961196994560" target="_blank" rel="noopener">Desde la Verdad</a>, mi boletín semanal en LinkedIn, y mi columna en <a class="enlace-t" href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener">El Estímulo</a>. Ideas y reflexiones sobre confianza, influencia y la manera en que las marcas se ganan su lugar.</p><a class="enlace" href="/pensamiento/">Leer</a></div>
-      <div class="camino"><h3>Conferencias</h3><p>Escenarios, paneles y conversaciones para empresas, gremios y universidades que quieren entender cómo se construye la confianza de una marca.</p><a class="enlace" href="/conferencias/">Ver temas</a></div>
-      <div class="camino"><h3>Formación</h3><p>El Diplomado en Relaciones Públicas e Influencia de la UNIMET, la mentoría PRIME y programas a la medida para equipos de empresas.</p><a class="enlace" href="/formacion/">Conocer programas</a></div>
-      <div class="camino"><h3>YM Agency</h3><p>Mi agencia boutique de comunicaciones y relaciones públicas en Caracas, con un equipo y una red de colaboradores que amplifican marcas con propósito.</p><a class="enlace" href="/agencia/">Entrar a la agencia</a></div>
+    <div class="dos">
+      <div class="stack" style="gap:16px">
+        <h2>Una carrera hecha de conexiones<span class="dot">.</span></h2>
+        <p class="lead">Llegué a Caracas desde Valle de la Pascua para estudiar. La radio me abrió la música, la música me abrió las marcas y las marcas me llevaron a fundar una agencia. Cada etapa me enseñó lo mismo: la confianza se construye con otros.</p>
+      </div>
+      <figure class="foto-cap"><img src="/img/sobre-mi.jpg" alt="Yuraima Mercado con Caracas de fondo, en blanco y negro" loading="lazy" style="object-position:50% 30%"></figure>
+    </div>
+    <ol class="recorrido">
+      <li><span class="anio">2004</span><b>La radio</b><p>Pasante, productora, operadora y locutora, hasta tener programa propio en la antigua Hot 94.1.</p></li>
+      <li><span class="anio">2009</span><b>La música</b><p>Con Urban Media produje Por el Pecho Fest y acompañé a Rawayana y Desorden Público.</p></li>
+      <li><span class="anio">2015</span><b>YM Agency</b><p>Fundé mi agencia desde la cultura y la abrí a hoteles, gastronomía, banca y tecnología.</p></li>
+      <li><span class="anio">2017</span><b>Las grandes marcas</b><p>Ron Santa Teresa y, por más de tres años, todo el portafolio de Diageo en Venezuela.</p></li>
+      <li><span class="anio">2021</span><b>Deporte y startups</b><p>Mánager del atleta olímpico Daniel Dhers y equipo consultivo de Cashea desde antes de nacer.</p></li>
+      <li><span class="anio">2026</span><b>Hoy</b><p>Premio CIMA, Diplomado de la UNIMET, columna en El Estímulo y la visita de Branson.</p></li>
+    </ol>
+    <a class="enlace" href="/sobre-mi/">Leer mi historia completa</a>
+  </div>
+</div></section>
+
+<section class="bloque capitulo"><div class="wrap split">
+  <div class="riel"><span class="num">03</span><p class="eyebrow">Lo que aprendí</p></div>
+  <div class="stack">
+    <h2>La confianza no se compra: se traslada<span class="dot">.</span></h2>
+    <p class="lead">De ese camino nacieron las ideas que hoy guían mi trabajo, mis columnas y mis clases.</p>
+    <div class="dos">
+      <svg class="ejes" viewBox="0 0 440 300" role="img" aria-label="Tres estrategias articuladas: negocio, mercadeo y comunicación, con la confianza en el centro">
+        <circle cx="160" cy="115" r="92" fill="#EDB41E" fill-opacity=".16" stroke="currentColor" stroke-opacity=".35"/>
+        <circle cx="280" cy="115" r="92" fill="#EDB41E" fill-opacity=".16" stroke="currentColor" stroke-opacity=".35"/>
+        <circle cx="220" cy="200" r="92" fill="#EDB41E" fill-opacity=".16" stroke="currentColor" stroke-opacity=".35"/>
+        <text x="118" y="90" text-anchor="middle">Negocio</text>
+        <text x="322" y="90" text-anchor="middle">Mercadeo</text>
+        <text x="220" y="262" text-anchor="middle">Comunicación</text>
+        <text class="centro" x="220" y="150" text-anchor="middle">confianza</text>
+      </svg>
+      <div class="ideas-lista">
+        <div><h3>Ser más persona que personaje</h3><p class="muted">La autoridad se construye mostrando quién eres: cuando lo que dices coincide con lo que haces, la gente confía.</p></div>
+        <div><h3>Articular para que la marca hable con una sola voz</h3><p class="muted">La comunicación, el negocio y el mercadeo tienen que avanzar en la misma dirección.</p></div>
+        <div><h3>Existir para los medios, la comunidad y la IA</h3><p class="muted">La inteligencia artificial aprende de lo que otros dicen de nosotros. Las relaciones públicas son la puerta.</p></div>
+      </div>
+    </div>
+    <a class="enlace" href="/pensamiento/">Leer mi pensamiento</a>
+  </div>
+</div></section>
+
+<section class="bloque capitulo"><div class="wrap split">
+  <div class="riel"><span class="num">04</span><p class="eyebrow">Cómo lo pongo en práctica</p></div>
+  <div class="stack">
+    <h2>Lo que aprendí hoy trabaja para otras marcas<span class="dot">.</span></h2>
+    <p class="lead">En YM Agency, con un equipo propio y una red de colaboradores, trasladamos la confianza de cada marca a medios, aliados y comunidades, con un plan diseñado desde la estrategia de su negocio.</p>
+    <div class="tarjetas">
+      <a class="tarjeta" href="/agencia/"><img src="/img/cima.jpg" alt="Premio CIMA 2026 en Relaciones Públicas por el caso La Clave" loading="lazy" style="object-position:50% 40%"><span class="eyebrow">Premio CIMA 2026</span><h3>La Clave, cuando una fiesta se volvió cultura</h3></a>
+      <a class="tarjeta" href="/agencia/"><img src="/img/branson-tarima.jpg" alt="Sir Richard Branson en el Startup Venezuela Summit 2026" loading="lazy" style="object-position:30% 50%"><span class="eyebrow">Startup Venezuela Summit</span><h3>Sir Richard Branson, en su primera visita a Venezuela</h3></a>
+      <a class="tarjeta" href="/agencia/"><img src="/img/fiat-gorras.jpg" alt="Amanda Dudamel y Marcos Noriega, embajadores de Fiat" loading="lazy" style="object-position:50% 25%"><span class="eyebrow">Fiat Venezuela</span><h3>Amanda Dudamel y Marcos Noriega, la nueva cara de Fiat</h3></a>
+    </div>
+    <div class="marcas"><span>Mercado Libre</span><span>Fiat</span><span>Diageo</span><span>Startup Venezuela Summit</span><span>Bajo el Árbol</span><span>Rawayana</span><span>Cashea</span></div>
+    <a class="enlace" href="/agencia/">Entrar a YM Agency</a>
+  </div>
+</div></section>
+
+<section class="bloque capitulo"><div class="wrap split">
+  <div class="riel"><span class="num">05</span><p class="eyebrow">Cómo lo comparto</p></div>
+  <div class="stack">
+    <h2>Lo que sé, lo comparto<span class="dot">.</span></h2>
+    <p class="lead">Escribo, enseño y subo a escenarios para que más personas y empresas aprendan a construir confianza.</p>
+    <div class="tarjetas">
+      <a class="tarjeta" href="/pensamiento/"><img src="/img/desde-la-verdad.jpg" alt="Banner del boletín Desde la Verdad" loading="lazy" style="object-position:20% 50%"><span class="eyebrow">Pensamiento</span><h3>Desde la Verdad y mi columna en El Estímulo</h3></a>
+      <a class="tarjeta" href="/conferencias/"><img src="/img/svs-taller.jpg" alt="Yuraima Mercado dicta su taller en el Startup Venezuela Summit" loading="lazy" style="object-position:62% 40%"><span class="eyebrow">Conferencias</span><h3>Escenarios, paneles y talleres para empresas</h3></a>
+      <a class="tarjeta" href="/formacion/"><img src="/img/taller-kron.jpg" alt="Yuraima Mercado en el taller Plan de arranque emprendedor" loading="lazy" style="object-position:50% 20%"><span class="eyebrow">Formación</span><h3>Diplomado UNIMET, mentoría PRIME e in company</h3></a>
     </div>
   </div>
 </div></section>
 
-<section class="cita"><div class="wrap">
-  <blockquote>Ser más persona que personaje<span class="dot">.</span></blockquote>
-  <p class="cita-texto">La autoridad no se construye con una imagen pulida. Se construye mostrando quién eres de verdad: lo que piensas, lo que haces y cómo tratas a los demás. Cuando lo que dices coincide con lo que haces, la gente confía, y esa confianza es la que te convierte en referente.</p>
-  <cite>Yuraima Mercado</cite>
-</div></section>
-
-<section class="bloque"><div class="wrap split">
-  <p class="eyebrow">Lo que sostengo</p>
-  <div class="stack prose">
-    <h2>La comunicación responde a la estrategia del negocio<span class="dot">.</span></h2>
-    <p class="lead">Las marcas que logran confianza tienen algo en común. Su estrategia de comunicación conversa con su estrategia de negocio y con su estrategia de mercadeo, y las tres avanzan en la misma dirección.</p>
-    <svg class="ejes" viewBox="0 0 440 300" role="img" aria-label="Tres estrategias articuladas: negocio, mercadeo y comunicación, con la confianza en el centro">
-      <circle cx="160" cy="115" r="92" fill="#EDB41E" fill-opacity=".16" stroke="currentColor" stroke-opacity=".35"/>
-      <circle cx="280" cy="115" r="92" fill="#EDB41E" fill-opacity=".16" stroke="currentColor" stroke-opacity=".35"/>
-      <circle cx="220" cy="200" r="92" fill="#EDB41E" fill-opacity=".16" stroke="currentColor" stroke-opacity=".35"/>
-      <text x="118" y="90" text-anchor="middle">Negocio</text>
-      <text x="322" y="90" text-anchor="middle">Mercadeo</text>
-      <text x="220" y="262" text-anchor="middle">Comunicación</text>
-      <text class="centro" x="220" y="150" text-anchor="middle">confianza</text>
-    </svg>
-    <p class="muted">En Venezuela veo a diario empresas con propuestas extraordinarias que todavía hablan por partes. Articular esas voces es el centro de mi trabajo, y es también lo que hace que una marca exista para los medios, para su comunidad y hoy para la inteligencia artificial, que aprende de lo que otros dicen de nosotros.</p>
-  </div>
-</div></section>
-
-<section class="bloque"><div class="wrap split">
-  <p class="eyebrow">Columna en El Estímulo</p>
+<section class="bloque capitulo"><div class="wrap split">
+  <div class="riel"><span class="num">06</span><p class="eyebrow">Lo que dicen otros</p></div>
   <div class="stack">
-    <div class="columnas">
-      <a class="columna" href="https://elestimulo.com/opinion/2026-10-08/relaciones-publicas-confianza/" target="_blank" rel="noopener"><span class="meta">8 de octubre de 2026</span><h3>Relaciones públicas, el oficio de trasladar la confianza</h3></a>
-      <a class="columna" href="https://elestimulo.com/opinion/2026-10-27/lo-que-richard-branson-eligio-prometer/" target="_blank" rel="noopener"><span class="meta">27 de octubre de 2026</span><h3>Lo que Richard Branson eligió prometer</h3></a>
-      <a class="columna" href="https://elestimulo.com/opinion/2026-11-10/hablar-con-la-verdad-rrpp/" target="_blank" rel="noopener"><span class="meta">10 de noviembre de 2026</span><h3>Hablar desde la verdad, el lujo que construye confianza</h3></a>
+    <h2>Que otros lo digan<span class="dot">.</span></h2>
+    <div class="dos dos-ancho">
+      <div class="testimonios"><figure class="testimonio"><p class="destaca">¡Fue una gran aliada en el éxito de esta edición!</p><blockquote>Trabajar con Yuraima Mercado fue una experiencia extraordinaria. Su profesionalismo, compromiso y enorme capacidad de convocatoria fueron fundamentales para lograr una cobertura de medios excepcional, atraer invitados de primer nivel y alcanzar un récord histórico de asistencia en el Startup Venezuela Summit 2026. Yuraima no solo hizo un trabajo impecable, sino que se involucró con verdadera pasión en lo que estábamos construyendo.</blockquote><figcaption><span class="ini" aria-hidden="true">ET</span><span><b>Esteban Torbar</b>Fundador, Startup Venezuela Summit</span></figcaption></figure></div>
+      <div class="medios medios-uno">
+        <a class="medio" href="https://elestimulo.com/de-interes/2026-10-27/premios-cima-2026-conoce-a-los-ganadores-del-mercadeo-venezolano/" target="_blank" rel="noopener"><span class="meta">El Estímulo · 2026</span><h3>Premios CIMA 2026: los ganadores del mercadeo venezolano</h3></a>
+        <a class="medio" href="https://www.unimet.edu.ve/unimet-abre-un-nuevo-diplomado-en-relaciones-publicas-e-influencia-para-profesionalizar-a-los-nuevos-estrategas-de-la-reputacion-y-la-influencia-en-venezuela/" target="_blank" rel="noopener"><span class="meta">UNIMET · 2026</span><h3>UNIMET abre un nuevo Diplomado en Relaciones Públicas e Influencia</h3></a>
+        <a class="medio" href="https://www.publicidadymercadeo.net/ym-agency-ideas-ingeniosas-y-disruptivas/" target="_blank" rel="noopener"><span class="meta">Revista P&amp;M · 2024</span><h3>YM Agency: ideas ingeniosas y disruptivas</h3></a>
+        <a class="medio" href="https://las100protagonistas.com/yuraima-mercado/" target="_blank" rel="noopener"><span class="meta">Las 100 Protagonistas · 2024</span><h3>Perfil de Yuraima Mercado</h3></a>
+      </div>
     </div>
-    <a class="enlace" href="/pensamiento/">Todo mi pensamiento</a>
-  </div>
-</div></section>
-
-<section class="bloque"><div class="wrap split full">
-  <p class="eyebrow">Lo que dicen</p>
-  <div class="stack">
-    <div class="testimonios"><figure class="testimonio"><p class="destaca">¡Fue una gran aliada en el éxito de esta edición!</p><blockquote>Trabajar con Yuraima Mercado fue una experiencia extraordinaria. Su profesionalismo, compromiso y enorme capacidad de convocatoria fueron fundamentales para lograr una cobertura de medios excepcional, atraer invitados de primer nivel y alcanzar un récord histórico de asistencia en el Startup Venezuela Summit 2026. Yuraima no solo hizo un trabajo impecable, sino que se involucró con verdadera pasión en lo que estábamos construyendo.</blockquote><figcaption><span class="ini" aria-hidden="true">ET</span><span><b>Esteban Torbar</b>Fundador, Startup Venezuela Summit</span></figcaption></figure></div>
-    <a class="enlace" href="/agencia/">Ver casos de YM Agency</a>
-  </div>
-</div></section>
-
-<section class="bloque" id="en-medios"><div class="wrap split">
-  <p class="eyebrow">En medios</p>
-  <div class="stack">
-    <div class="medios">
-      <a class="medio" href="https://www.unimet.edu.ve/unimet-abre-un-nuevo-diplomado-en-relaciones-publicas-e-influencia-para-profesionalizar-a-los-nuevos-estrategas-de-la-reputacion-y-la-influencia-en-venezuela/" target="_blank" rel="noopener"><span class="meta">UNIMET · 2026</span><h3>UNIMET abre un nuevo Diplomado en Relaciones Públicas e Influencia</h3></a>
-      <a class="medio" href="https://contrapunto.com/nacional/universidades/unimet-abre-diplomado-en-relaciones-publicas-e-influencia/" target="_blank" rel="noopener"><span class="meta">Contrapunto · 2026</span><h3>UNIMET abre Diplomado en Relaciones Públicas e Influencia</h3></a>
-      <a class="medio" href="https://www.publicidadymercadeo.net/ym-agency-ideas-ingeniosas-y-disruptivas/" target="_blank" rel="noopener"><span class="meta">Revista P&amp;M · 2024</span><h3>YM Agency: ideas ingeniosas y disruptivas</h3></a>
-      <a class="medio" href="https://www.publicidadymercadeo.net/la-escuelita-regresa/" target="_blank" rel="noopener"><span class="meta">Revista P&amp;M · 2025</span><h3>Regresa la Escuelita de Yuraima Mercado</h3></a>
-      <a class="medio" href="https://las100protagonistas.com/yuraima-mercado/" target="_blank" rel="noopener"><span class="meta">Las 100 Protagonistas · 2024</span><h3>Perfil de Yuraima Mercado</h3></a>
-      <a class="medio" href="https://fipev.com/" target="_blank" rel="noopener"><span class="meta">FIPEV · Panelista</span><h3>Feria Internacional para Emprendedores de Venezuela</h3></a>
+    <div class="sellos">
+      <span><b>Premio CIMA 2026</b> · Relaciones Públicas</span>
+      <span><b>Columnista</b> · El Estímulo</span>
+      <span><b>Diplomado en RR. PP. e Influencia</b> · UNIMET</span>
+      <span><b>Dirección de Comunicaciones</b> · IESA y Dircom Panamá</span>
     </div>
-    <a class="enlace" href="/prensa/">Sala de prensa</a>
+    <a class="enlace" href="/prensa/">Ir a la sala de prensa</a>
   </div>
 </div></section>
 
-<section class="cita"><div class="wrap stack">
+<section class="cita"><div class="wrap stack" style="gap:18px">
   <blockquote>La visibilidad abre puertas; la relevancia las mantiene abiertas<span class="dot">.</span></blockquote>
-  <div class="acciones"><a class="btn" href="/contacto/">Escríbeme</a></div>
+  <p class="cita-texto">Si tu marca, tu empresa o tu evento necesita que otros validen lo que vale, conversemos.</p>
+  <div class="acciones"><a class="btn" href="/contacto/">Conversemos</a><a class="enlace" href="https://wa.me/584142651995" target="_blank" rel="noopener">WhatsApp</a></div>
 </div></section>
 </main>
-<footer class="pie"><div class="wrap"><div class="stack" style="gap:10px"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><small>Estrategia en Comunicación, Relaciones Públicas e Influencia · Caracas, Venezuela · © 2026</small><a class="enlace" href="/ia/" style="font-size:.82rem">Trayectoria en datos</a><div class="redes"><a href="https://www.instagram.com/yuraimamercado/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/yuraimamercado/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7323002961196994560" target="_blank" rel="noopener">Desde la Verdad</a><a href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener">El Estímulo</a></div></div><nav class="nav" aria-label="Principal"><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></footer>
+<footer class="pie"><div class="wrap"><div class="stack" style="gap:10px"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><small>Estrategia en Comunicación, Relaciones Públicas e Influencia · Caracas, Venezuela · © 2026</small><a class="enlace" href="/ia/" style="font-size:.82rem">Trayectoria en datos</a><div class="redes"><a href="https://www.instagram.com/yuraimamercado/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/yuraimamercado/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7323002961196994560" target="_blank" rel="noopener">Desde la Verdad</a><a href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener">El Estímulo</a></div></div><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></footer>
 <script>document.querySelectorAll('[data-copiar]').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById(b.dataset.copiar);var txt=t.textContent.trim();function ok(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar'},1800)}function sel(){var r=document.createRange();r.selectNodeContents(t);var s=getSelection();s.removeAllRanges();s.addRange(r)}try{navigator.clipboard.writeText(txt).then(ok,sel)}catch(e){sel()}})});</script>
 
 

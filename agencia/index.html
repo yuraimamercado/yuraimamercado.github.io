@@ -277,16 +277,53 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
   .medio h3{font-size:1.12rem}
   .wa-flot{width:52px;height:52px;right:14px;bottom:18px}
 }
+/* Historia v3: capítulos, recorrido y tarjetas */
+.eyebrow .cap{display:inline-block;color:var(--dot-ink);margin-right:.6em}
+.riel{display:grid;gap:6px;align-content:start}
+.riel .num{font-family:var(--display);font-weight:300;font-size:2.6rem;line-height:1;color:var(--ink)}
+.riel .num::after{content:".";color:var(--dot)}
+@media (max-width:860px){.riel{display:flex;align-items:baseline;gap:12px}.riel .num{font-size:2rem}}
+.dos{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px 36px;align-items:center}
+.dos.dos-ancho{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+@media (max-width:760px){.dos,.dos.dos-ancho{grid-template-columns:minmax(0,1fr)}}
+.foto-cap{margin:0}.foto-cap img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--soft)}
+.recorrido{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px}
+.recorrido li{display:grid;gap:4px;align-content:start;padding:14px 0 16px;border-top:2px solid var(--ink);position:relative}
+.recorrido li::before{content:"";position:absolute;top:-6px;left:0;width:10px;height:10px;border-radius:50%;background:var(--dot)}
+.recorrido .anio{font-size:.74rem;font-weight:600;letter-spacing:.14em;color:var(--muted)}
+.recorrido b{font-family:var(--display);font-weight:400;font-size:1.15rem;line-height:1.2}
+.recorrido p{font-size:.9rem;color:var(--muted);line-height:1.5}
+@media (max-width:760px){.recorrido{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:6px}.recorrido li{flex:0 0 70%;scroll-snap-align:start}}
+.ideas-lista{display:grid;gap:16px}
+.ideas-lista h3{font-size:1.12rem}
+.ideas-lista h3::before{content:"";display:inline-block;width:.42em;height:.42em;border-radius:50%;background:var(--dot);margin-right:.5em;vertical-align:.18em}
+.ideas-lista p{font-size:.92rem;margin-top:4px}
+.tarjetas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tarjeta{display:grid;gap:8px;align-content:start;text-decoration:none}
+.tarjeta img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--soft);transition:opacity .2s}
+.tarjeta .eyebrow{font-size:.66rem;margin-top:4px}
+.tarjeta h3{font-size:1.08rem;line-height:1.25}
+.tarjeta:hover img{opacity:.88}.tarjeta:hover h3{text-decoration:underline;text-decoration-color:var(--dot);text-decoration-thickness:2px;text-underline-offset:4px}
+@media (max-width:760px){.tarjetas{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:6px}.tarjeta{flex:0 0 76%;scroll-snap-align:start}}
+.medios.medios-uno{grid-template-columns:minmax(0,1fr)}
+.medios.medios-uno .medio h3{font-size:1.02rem}
+.hilo{font-family:var(--display);font-style:italic;font-size:1.08rem;color:var(--muted);margin:0}
+.siguiente{border-top:1px solid var(--line);background:var(--soft)}
+.siguiente a{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:24px;text-decoration:none}
+.siguiente .t{display:block;font-family:var(--display);font-size:clamp(1.25rem,2.2vw,1.6rem);font-weight:300;margin-top:4px}
+.siguiente .flecha{font-size:1.6rem;transition:transform .2s}
+.siguiente a:hover .flecha{transform:translateX(6px)}
 </style>
 
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/agencia/" data-v="agencia" aria-current="page">YM Agency</a><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></header><main>
+<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia" aria-current="page">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></header><main>
 <section class="hero"><div class="wrap">
   <div class="stack" style="max-width:64rem">
     <img class="logo-ym" src="/img/ym-negro.png" alt="Logo de YM Agency">
-    <p class="eyebrow">YM Agency · Caracas, Venezuela</p>
+    <p class="eyebrow"><span class="cap">04</span> Cómo lo pongo en práctica · YM Agency</p>
     <h1>Trasladamos la confianza de tu marca a medios, aliados y comunidades<span class="dot">.</span></h1>
+    <p class="hilo">Todo lo que aprendí hoy trabaja para otras marcas.</p>
     <p class="lead">YM Agency es la agencia venezolana de relaciones públicas e influencia que fundé en 2015 y dirijo, con sede en Caracas. Cada plan se diseña desde la estrategia de tu negocio. Trabajamos con un equipo propio y una red de colaboradores en producción, diseño, fotografía y video que crece con cada proyecto.</p>
     <div class="acciones"><a class="btn" href="/contacto/">Hablemos de tu marca</a></div>
   </div>
@@ -362,8 +399,9 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
     <p class="muted">Acompañamos proyectos que generan valor, trabajo digno y soluciones.</p>
   </div>
 </div></section>
+<section class="siguiente"><div class="wrap"><a href="/conferencias/"><span><span class="eyebrow">Siguiente capítulo · 05 · Cómo lo comparto</span><span class="t">Conferencias y escenarios<span class="dot">.</span></span></span><span class="flecha" aria-hidden="true">→</span></a></div></section>
 </main>
-<footer class="pie"><div class="wrap"><div class="stack" style="gap:10px"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><small>Estrategia en Comunicación, Relaciones Públicas e Influencia · Caracas, Venezuela · © 2026</small><a class="enlace" href="/ia/" style="font-size:.82rem">Trayectoria en datos</a><div class="redes"><a href="https://www.instagram.com/yuraimamercado/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/yuraimamercado/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7323002961196994560" target="_blank" rel="noopener">Desde la Verdad</a><a href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener">El Estímulo</a></div></div><nav class="nav" aria-label="Principal"><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></footer>
+<footer class="pie"><div class="wrap"><div class="stack" style="gap:10px"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><small>Estrategia en Comunicación, Relaciones Públicas e Influencia · Caracas, Venezuela · © 2026</small><a class="enlace" href="/ia/" style="font-size:.82rem">Trayectoria en datos</a><div class="redes"><a href="https://www.instagram.com/yuraimamercado/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/yuraimamercado/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7323002961196994560" target="_blank" rel="noopener">Desde la Verdad</a><a href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener">El Estímulo</a></div></div><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></footer>
 <script>document.querySelectorAll('[data-copiar]').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById(b.dataset.copiar);var txt=t.textContent.trim();function ok(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar'},1800)}function sel(){var r=document.createRange();r.selectNodeContents(t);var s=getSelection();s.removeAllRanges();s.addRange(r)}try{navigator.clipboard.writeText(txt).then(ok,sel)}catch(e){sel()}})});</script>
 
 
