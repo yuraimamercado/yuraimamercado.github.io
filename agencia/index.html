@@ -133,6 +133,11 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 .idea h3::before{content:"";display:inline-block;width:.42em;height:.42em;border-radius:50%;background:var(--dot);margin-right:.5em;vertical-align:.18em}
 
 /* Ficha destacada */
+.caso-foto{margin:0}.caso-foto img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;background:var(--soft)}
+.caso-galeria{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.caso-galeria figure{margin:0;display:grid;gap:8px}.caso-galeria img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--soft)}
+.caso-galeria figcaption{font-size:.78rem;color:var(--muted)}
+@media (max-width:600px){.caso-galeria{grid-template-columns:minmax(0,1fr)}}
 .destacado{background:var(--soft);border:1px solid var(--line);padding:clamp(28px, 4vw, 48px);display:grid;gap:18px}
 .datos{display:flex;flex-wrap:wrap;gap:12px 36px;font-size:.88rem;color:var(--muted)}
 .datos b{display:block;color:var(--ink);font-family:var(--display);font-weight:400;font-size:1.7rem;letter-spacing:-.01em}
@@ -299,7 +304,12 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
   <p class="eyebrow">Casos</p>
   <div class="stack" style="gap:28px">
     <div class="destacado">
-      <figure class="ancha"><img src="/img/summit.jpg" alt="Yuraima Mercado en el escenario del Startup Venezuela Summit 2026" style="object-position:70% 50%"></figure>
+      <figure class="caso-foto"><img src="/img/branson-tarima.jpg" alt="Sir Richard Branson conversa con Esteban Torbar en la tarima del Startup Venezuela Summit 2026 ante cientos de asistentes" loading="lazy"></figure>
+      <div class="caso-galeria">
+        <figure><img src="/img/branson-periodistas.jpg" alt="Sir Richard Branson celebra junto a los periodistas del encuentro cerrado y al equipo de YM Agency" loading="lazy" style="object-position:50% 45%"><figcaption>Encuentro cerrado con periodistas</figcaption></figure>
+        <figure><img src="/img/branson-camila.jpg" alt="Sir Richard Branson ríe en la mesa con medios; detrás, Yuraima Mercado" loading="lazy" style="object-position:45% 40%"><figcaption>Branson con el equipo de YM Agency</figcaption></figure>
+        <figure><img src="/img/branson-publico.jpg" alt="Vista desde lo alto del público en la charla inaugural de Sir Richard Branson en Caracas Campus" loading="lazy" style="object-position:50% 55%"><figcaption>Charla inaugural en Caracas Campus</figcaption></figure>
+      </div>
       <p class="eyebrow">Startup Venezuela Summit 2026 · Prensa y relaciones públicas</p>
       <h2>Sir Richard Branson, en su primera visita a Venezuela<span class="dot">.</span></h2>
       <p>Llevamos la prensa y las relaciones públicas de la sexta edición del <a class="enlace-t" href="https://startupvenezuelasummit.com/" target="_blank" rel="noopener">Startup Venezuela Summit</a>, en Caracas. Organizamos la rueda de prensa del fundador, Esteban Torbar, la convocatoria a la charla inaugural de Sir Richard Branson y un encuentro cerrado del fundador de Virgin Group con un grupo reducido de periodistas.</p>
