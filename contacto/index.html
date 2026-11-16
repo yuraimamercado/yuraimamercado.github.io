@@ -203,6 +203,8 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 .medio h3{font-size:1.2rem;transition:color .2s}
 .medio:hover h3{color:var(--muted)}
 @media (max-width:760px){.medios{grid-template-columns:minmax(0,1fr)}}
+.mapa{margin-top:14px;border:1px solid var(--line);overflow:hidden;aspect-ratio:16/10;background:var(--soft)}
+.mapa iframe{display:block;width:100%;height:100%;border:0}
 .revista{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:32px;align-items:center;padding:34px;background:var(--soft);border:1px solid var(--line);text-decoration:none}
 .revista .meta{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .revista h3{font-family:var(--display);font-weight:400;font-size:clamp(1.7rem,3.2vw,2.4rem);line-height:1.1;margin:10px 0 12px}
@@ -271,7 +273,7 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
       <div class="acciones"><a class="enlace" href="mailto:hola@yuraimamercado.com">Escribir un correo</a><button class="copiar" type="button" id="c-correo" data-copiar="v-correo">Copiar</button></div></div>
     <div class="dato"><p class="eyebrow">WhatsApp</p><span class="valor" id="v-wa">+58 414 265 1995</span>
       <div class="acciones"><a class="enlace" href="https://wa.me/584142651995" target="_blank" rel="noopener">Abrir WhatsApp</a><button class="copiar" type="button" id="c-wa" data-copiar="v-wa">Copiar</button></div></div>
-    <div class="dato"><p class="eyebrow">Oficina</p><span class="valor">Centro Coinasa, La Castellana, Caracas, Venezuela</span><p class="muted">Reuniones con cita previa.</p></div>
+    <div class="dato"><p class="eyebrow">Ubicación</p><span class="valor">Centro Coinasa, La Castellana, Caracas, Venezuela</span><p class="muted">Reuniones con cita previa.</p><div class="mapa"><iframe src="https://www.google.com/maps?q=Centro+Coinasa,+Av.+San+Felipe,+La+Castellana,+Caracas&amp;z=16&amp;output=embed" title="Mapa: Centro Coinasa, La Castellana, Caracas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div><div class="acciones"><a class="enlace" href="https://www.google.com/maps/search/?api=1&amp;query=Centro+Coinasa,+Av.+San+Felipe,+La+Castellana,+Caracas" target="_blank" rel="noopener">Abrir en Google Maps</a></div></div>
   </div>
 </div></section>
 
