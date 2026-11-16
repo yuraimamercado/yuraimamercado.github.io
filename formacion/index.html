@@ -71,7 +71,7 @@ em.serif{font-family:var(--display);font-style:italic;font-size:1.1em}
 .enlace:hover{text-decoration-thickness:3px}
 
 /* Bloques */
-.bloque{padding-block:clamp(48px, 6.5vw, 88px)}
+.bloque{padding-block:clamp(30px, 4vw, 54px)}
 .bloque + .bloque{border-top:1px solid var(--line)}
 .split{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px 40px}
 .split.full{grid-template-columns:minmax(0,1fr);gap:18px}
@@ -79,10 +79,10 @@ em.serif{font-family:var(--display);font-style:italic;font-size:1.1em}
 .stack{display:grid;gap:28px;min-width:0}
 
 /* Portada */
-.hero{padding-block:clamp(40px, 6vw, 80px) clamp(40px, 5vw, 72px)}
+.hero{padding-block:clamp(26px, 4vw, 52px) clamp(26px, 3.5vw, 46px)}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.8fr);gap:56px;align-items:end}
 @media (max-width:860px){.hero-grid{grid-template-columns:minmax(0,1fr)}}
-.hero .stack{gap:30px}
+.hero .stack{gap:20px}
 .foto{margin:0;background:var(--soft);aspect-ratio:4/5;max-width:min(100%, 420px);width:100%;justify-self:center;display:flex;align-items:flex-end;position:relative;overflow:hidden;border:1px solid var(--line)}
 .foto::before{content:"";position:absolute;width:46%;aspect-ratio:1;border-radius:50%;background:var(--dot);right:-12%;top:-10%;opacity:.9}
 .foto figcaption{position:relative;font-size:.78rem;color:var(--muted);padding:18px 20px;letter-spacing:.02em}
@@ -96,17 +96,17 @@ em.serif{font-family:var(--display);font-style:italic;font-size:1.1em}
 /* Caminos */
 .caminos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 56px}
 @media (max-width:700px){.caminos{grid-template-columns:minmax(0,1fr)}}
-.camino{display:grid;gap:14px;padding-block:32px;border-top:1px solid var(--ink);align-content:start}
+.camino{display:grid;gap:10px;padding-block:22px;border-top:1px solid var(--ink);align-content:start}
 .camino p{color:var(--muted)}
 
 /* Cita */
-.cita{padding-block:clamp(56px, 8vw, 110px);text-align:left}
+.cita{padding-block:clamp(36px, 5vw, 64px);text-align:left}
 .cita blockquote{margin:0;font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(1.7rem, 3.6vw, 2.7rem);line-height:1.08;letter-spacing:-.02em;max-width:18ch;text-wrap:balance}
 .cita cite{display:block;margin-top:26px;font-style:normal;font-size:.84rem;color:var(--muted)}
 
 /* Filas */
 .filas{display:grid}
-.fila{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) auto;gap:10px 40px;padding-block:24px;border-top:1px solid var(--line);align-items:baseline}
+.fila{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) auto;gap:10px 40px;padding-block:16px;border-top:1px solid var(--line);align-items:baseline}
 .fila:last-child{border-bottom:1px solid var(--line)}
 .fila h3{font-size:1.2rem}
 .fila .meta{font-size:.84rem;color:var(--muted);white-space:nowrap}
@@ -122,7 +122,7 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 
 /* Etapas */
 .etapas{display:grid;gap:0}
-.etapa{display:grid;grid-template-columns:150px minmax(0,1fr);gap:8px 40px;padding-block:22px;border-top:1px solid var(--line)}
+.etapa{display:grid;grid-template-columns:150px minmax(0,1fr);gap:6px 40px;padding-block:15px;border-top:1px solid var(--line)}
 .etapa:last-child{border-bottom:1px solid var(--line)}
 .etapa .eyebrow{padding-top:6px}
 @media (max-width:600px){.etapa{grid-template-columns:minmax(0,1fr)}}
@@ -144,7 +144,7 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 
 /* Contacto */
 .contacto{display:grid;gap:22px}
-.dato{display:grid;gap:6px;padding-block:22px;border-top:1px solid var(--line)}
+.dato{display:grid;gap:4px;padding-block:15px;border-top:1px solid var(--line)}
 .dato .valor{font-family:var(--display);font-size:clamp(1.15rem, 2vw, 1.45rem);font-weight:300;letter-spacing:-.01em;word-break:break-word;user-select:all}
 .dato .acciones{gap:10px 24px}
 .copiar{background:none;border:0;padding:0;font:inherit;font-weight:600;font-size:.88rem;color:var(--muted);cursor:pointer;text-decoration:underline;text-underline-offset:5px}
@@ -169,7 +169,7 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 :root[data-theme="dark"] .logo-ym{filter:invert(1)}
 
 /* Pie */
-.pie{border-top:1px solid var(--line);padding-block:48px 56px}
+.pie{border-top:1px solid var(--line);padding-block:32px 40px}
 .pie .wrap{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-end}
 .pie .nav a{font-size:.82rem}
 .pie small{color:var(--muted);font-size:.8rem}
@@ -197,13 +197,13 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 .form button{justify-self:start;border:0;cursor:pointer}
 .aviso-ok{background:var(--soft);border:1px solid var(--line);padding:18px 20px}
 
-.cifras{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 36px;padding-block:34px 26px}
+.cifras{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 30px;padding-block:22px 18px}
 .cifra b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(1.6rem,2.6vw,2.1rem);letter-spacing:-.01em;line-height:1.05;color:var(--ink)}
 .cifra b .dot{color:var(--dot)}
 .cifra span{display:block;margin-top:8px;font-size:.86rem;color:var(--muted);line-height:1.4}
 @media (max-width:760px){.cifras{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .medios{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
-.medio{display:grid;gap:8px;align-content:start;text-decoration:none;padding-block:20px;border-top:1px solid var(--line)}
+.medio{display:grid;gap:6px;align-content:start;text-decoration:none;padding-block:14px;border-top:1px solid var(--line)}
 .medio .meta{font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .medio h3{font-size:1.2rem;transition:color .2s}
 .medio:hover h3{color:var(--muted)}
@@ -237,11 +237,11 @@ a.columna:hover h3{text-decoration:underline;text-decoration-color:var(--dot);te
 .etapa:last-child::after{display:none}
 @media (max-width:760px){
   body{font-size:16.5px}
-  .hero{padding-block:28px 36px}
+  .hero{padding-block:20px 26px}
   .hero-grid{gap:28px}
   .hero .foto{max-width:300px;aspect-ratio:4/5;justify-self:start}
-  .bloque{padding-block:44px}
-  .cita{padding-block:52px}
+  .bloque{padding-block:28px}
+  .cita{padding-block:34px}
   .cita::after{right:-140px;width:300px;opacity:.55}
   .split{gap:18px}
   .cifras{gap:26px 20px;padding-block:28px 22px}
