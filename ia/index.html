@@ -298,6 +298,10 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .eyebrow .cap{display:block;margin:0 0 10px}
 .eyebrow .cap::after{content:".";color:var(--dot)}
 @media (max-width:760px){.riel .num,.eyebrow .cap{font-size:2rem}}
+/* Filas alineadas */
+.fila{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) 170px}
+.fila .meta{text-align:right;white-space:normal}
+@media (max-width:760px){.fila{grid-template-columns:minmax(0,1fr)}.fila .meta{text-align:left}}
 </style>
 
 </head>

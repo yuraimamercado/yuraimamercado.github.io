@@ -302,6 +302,14 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .eyebrow .cap{display:block;margin:0 0 10px}
 .eyebrow .cap::after{content:".";color:var(--dot)}
 @media (max-width:760px){.riel .num,.eyebrow .cap{font-size:2rem}}
+/* Galería unificada */
+.taller-galeria img,.taller-galeria video{aspect-ratio:4/3}
+.taller-credito{font-size:var(--t-s);color:var(--muted)}
+@media (max-width:600px){.taller-galeria figure:nth-child(2){grid-column:auto;order:0}.taller-galeria{grid-template-columns:minmax(0,1fr)}}
+/* Filas alineadas */
+.fila{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) 170px}
+.fila .meta{text-align:right;white-space:normal}
+@media (max-width:760px){.fila{grid-template-columns:minmax(0,1fr)}.fila .meta{text-align:left}}
 </style>
 
 </head>
@@ -316,18 +324,21 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
   </div>
 </div></section>
 
-<section class="bloque" style="padding-top:0"><div class="wrap">
+<section class="bloque" style="padding-top:0"><div class="wrap split">
+  <p class="eyebrow">En el aula</p>
+  <div class="stack" style="gap:12px">
   <div class="taller-galeria">
     <figure><img src="/img/taller-kron.jpg" alt="Yuraima Mercado dicta el taller Plan de arranque emprendedor" loading="lazy" style="object-position:50% 30%"></figure>
     <figure><video src="/img/taller-escuelita.mp4" poster="/img/taller-escuelita-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Video del taller con el público en sala"></video></figure>
     <figure><img src="/img/taller-kron-pantalla.jpg" alt="Yuraima Mercado frente a la pantalla del taller con los logos de Escuelita, YM Agency y Krön" loading="lazy" style="object-position:50% 40%"></figure>
   </div>
   <p class="taller-credito"><b>Plan de arranque emprendedor</b> · Taller de Escuelita y YM Agency para Chocolates Krön, con cerca de 100 emprendedores, para construir marcas consistentes y efectivas.</p>
+  </div>
 </div></section>
 
 <section class="bloque"><div class="wrap split">
   <p class="eyebrow">Diplomado · UNIMET</p>
-  <div class="destacado">
+  <div class="stack">
     <h2>Diplomado en Relaciones Públicas e Influencia<span class="dot">.</span></h2>
     <p>Diseñé y dirijo este programa de la Universidad Metropolitana, que reúne a voces referentes del país para recorrer el oficio completo: estrategia, prensa, reputación, influencia, creadores y relacionamiento.</p>
     <div class="datos"><span><b>120</b>horas académicas</span><span><b>8</b>módulos</span><span><b>Cohorte I</b>oct. 2026 a mar. 2027</span><span><b>En línea</b>martes y jueves</span></div>

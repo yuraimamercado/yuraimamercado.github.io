@@ -314,6 +314,10 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .recibes b{font-family:var(--display);font-weight:400;font-size:var(--t-h3)}
 .recibes p{color:var(--muted)}
 @media (max-width:760px){.recibes{grid-template-columns:minmax(0,1fr)}}
+/* Filas alineadas */
+.fila{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) 170px}
+.fila .meta{text-align:right;white-space:normal}
+@media (max-width:760px){.fila{grid-template-columns:minmax(0,1fr)}.fila .meta{text-align:left}}
 </style>
 
 </head>

@@ -300,6 +300,13 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .eyebrow .cap{display:block;margin:0 0 10px}
 .eyebrow .cap::after{content:".";color:var(--dot)}
 @media (max-width:760px){.riel .num,.eyebrow .cap{font-size:2rem}}
+/* Filas alineadas */
+.fila{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) 170px}
+.fila .meta{text-align:right;white-space:normal}
+@media (max-width:760px){.fila{grid-template-columns:minmax(0,1fr)}.fila .meta{text-align:left}}
+/* Mapa proporcionado */
+.mapa{aspect-ratio:auto;height:240px}
+.mapa{max-width:40rem}
 </style>
 
 </head>
@@ -326,7 +333,7 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
   </div>
 </div></section>
 
-<section class="bloque" style="padding-top:0" id="escribeme"><div class="wrap split">
+<section class="bloque" id="escribeme"><div class="wrap split">
   <p class="eyebrow">Cuéntame tu caso</p>
   <div class="stack">
     <div class="aviso-ok" id="enviado" hidden><p><b>Gracias, ya recibí tu mensaje.</b> Mi equipo y yo te respondemos pronto.</p></div>

@@ -333,6 +333,10 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .metodo p{color:var(--muted)}
 .cifras.seis,.cifras.ocho{grid-template-columns:repeat(4,minmax(0,1fr));padding-block:6px 0}
 @media (max-width:760px){.metodo{grid-template-columns:minmax(0,1fr)}.cifras.seis,.cifras.ocho{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Filas alineadas */
+.fila{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) 170px}
+.fila .meta{text-align:right;white-space:normal}
+@media (max-width:760px){.fila{grid-template-columns:minmax(0,1fr)}.fila .meta{text-align:left}}
 </style>
 
 </head>
