@@ -323,6 +323,17 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .infancia img{width:100%;aspect-ratio:1;object-fit:cover;display:block;filter:saturate(.85)}
 .infancia figcaption{font-size:var(--t-s);color:var(--muted)}
 @media (max-width:760px){.origen{grid-template-columns:1fr}.infancia{max-width:160px}}
+/* Collage editorial */
+.collage{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:clamp(110px,11vw,160px);gap:10px}
+.collage figure{margin:0;position:relative;overflow:hidden;background:var(--soft)}
+.collage img{width:100%;height:100%;object-fit:cover;display:block}
+.collage span{position:absolute;left:8px;bottom:6px;font-family:var(--display);font-size:1rem;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.55)}
+.t-a{grid-column:1/4;grid-row:1/3}.t-b{grid-column:4/5;grid-row:1/2}.t-c{grid-column:5/7;grid-row:1/2}.t-d{grid-column:4/7;grid-row:2/3}
+.t-e{grid-column:1/3;grid-row:3/5}.t-f{grid-column:3/5;grid-row:3/4}.t-g{grid-column:5/7;grid-row:3/4}.t-h{grid-column:3/5;grid-row:4/5}.t-i{grid-column:5/7;grid-row:4/5}
+.t-b img{filter:saturate(.85)}
+.leyenda{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 18px;font-size:var(--t-s);color:var(--muted)}
+.leyenda b{font-family:var(--display);font-weight:400;color:var(--ink);margin-right:6px}
+@media (max-width:760px){.collage{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px}.collage figure{grid-column:auto!important;grid-row:auto!important}.collage .t-a,.collage .t-e{grid-column:1/3!important}.leyenda{grid-template-columns:1fr}}
 </style>
 
 <link rel="alternate" hreflang="es" href="https://yuraimamercado.com/sobre-mi/">
@@ -342,13 +353,10 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 
 <section class="bloque"><div class="wrap split">
   <p class="eyebrow">Roots</p>
-  <div class="origen">
-  <figure class="infancia"><img src="/img/infancia.jpg" alt="Yuraima Mercado as a child" loading="lazy"><figcaption>The early years</figcaption></figure>
   <div class="stack prose">
     <p class="lead">I was born and raised in Valle de la Pascua, in the plains of Guárico, Venezuela. I came to Caracas to study and built my career here; today I live and work in this city. I started out studying Education, chose journalism along the way, and that decision led me to radio, where I worked as on-air talent, host and producer.</p>
     <p>Radio opened the door to music. I handled press for artists such as Desorden Público and have worked with Rawayana since their beginnings. That free and disruptive territory of art and culture gave me a perspective I later brought to major brands.</p>
     <p>I describe myself as the channel. I have the ability to connect and link, to understand who creates value and for whom. It is a talent you are born with and also build, with judgment, responsibility and listening.</p>
-  </div>
   </div>
 </div></section>
 
@@ -369,16 +377,18 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
   <p class="eyebrow">Archive</p>
   <div class="stack">
     <h2>Twenty years in pictures<span class="dot">.</span></h2>
-    <div class="galeria archivo">
-    <figure><img src="/img/archivo-desorden-publico.jpg" alt="Yuraima Mercado celebrating with Desorden Público" loading="lazy" style="object-position:50% 40%"><figcaption>With Desorden Público</figcaption></figure>
-    <figure><img src="/img/archivo-okills.jpg" alt="Yuraima Mercado with the band Okills" loading="lazy" style="object-position:50% 40%"><figcaption>With Okills</figcaption></figure>
-    <figure><img src="/img/archivo-vinilo-versus.jpg" alt="Yuraima Mercado with musicians at a rehearsal studio in Miami" loading="lazy" style="object-position:50% 45%"><figcaption>Vinilo Versus gathering, Miami</figcaption></figure>
-    <figure><img src="/img/archivo-los-menor3s.jpg" alt="Yuraima Mercado with Los Menor3s" loading="lazy" style="object-position:50% 45%"><figcaption>With Los Menor3s</figcaption></figure>
-    <figure><img src="/img/100-protagonistas.jpg" alt="Yuraima Mercado on the Las 100 Protagonistas carpet" loading="lazy" style="object-position:50% 20%"><figcaption>Las 100 Protagonistas recognition, 2024</figcaption></figure>
-    <figure><img src="/img/meli-argentina.jpg" alt="Yuraima Mercado at Mercado Libre's regional offices in Argentina" loading="lazy" style="object-position:70% 45%"><figcaption>With Mercado Libre's regional team, Argentina</figcaption></figure>
-    <figure><img src="/img/archivo-business-fest.jpg" alt="Yuraima Mercado with the Business Fest creators team" loading="lazy" style="object-position:50% 40%"><figcaption>Business Fest</figcaption></figure>
-    <figure><img src="/img/conferencia-eposak.jpg" alt="Yuraima Mercado giving a talk at Eposak" loading="lazy" style="object-position:60% 35%"><figcaption>Talk at Eposak</figcaption></figure>
+    <div class="collage">
+      <figure class="t-a"><img src="/img/archivo-desorden-publico.jpg" alt="Yuraima Mercado celebrating with Desorden Público" loading="lazy" style="object-position:50% 40%"><span>1</span></figure>
+      <figure class="t-b"><img src="/img/infancia.jpg" alt="Yuraima Mercado as a child" loading="lazy" style="object-position:50% 40%"><span>2</span></figure>
+      <figure class="t-c"><img src="/img/archivo-okills.jpg" alt="Yuraima Mercado with the band Okills" loading="lazy" style="object-position:50% 40%"><span>3</span></figure>
+      <figure class="t-d"><img src="/img/archivo-vinilo-versus.jpg" alt="Yuraima Mercado with musicians at a rehearsal studio in Miami" loading="lazy" style="object-position:50% 45%"><span>4</span></figure>
+      <figure class="t-e"><img src="/img/100-protagonistas.jpg" alt="Yuraima Mercado on the Las 100 Protagonistas carpet" loading="lazy" style="object-position:50% 20%"><span>5</span></figure>
+      <figure class="t-f"><img src="/img/meli-argentina.jpg" alt="Yuraima Mercado at Mercado Libre's regional offices in Argentina" loading="lazy" style="object-position:70% 45%"><span>6</span></figure>
+      <figure class="t-g"><img src="/img/archivo-los-menor3s.jpg" alt="Yuraima Mercado with Los Menor3s" loading="lazy" style="object-position:50% 45%"><span>7</span></figure>
+      <figure class="t-h"><img src="/img/archivo-business-fest.jpg" alt="Yuraima Mercado with the Business Fest creators team" loading="lazy" style="object-position:50% 40%"><span>8</span></figure>
+      <figure class="t-i"><img src="/img/conferencia-eposak.jpg" alt="Yuraima Mercado giving a talk at Eposak" loading="lazy" style="object-position:60% 35%"><span>9</span></figure>
     </div>
+    <ol class="leyenda"><li><b>1</b>With Desorden Público</li><li><b>2</b>The early years</li><li><b>3</b>With Okills</li><li><b>4</b>Vinilo Versus gathering, Miami</li><li><b>5</b>Las 100 Protagonistas recognition, 2024</li><li><b>6</b>With Mercado Libre's regional team, Argentina</li><li><b>7</b>With Los Menor3s</li><li><b>8</b>Business Fest</li><li><b>9</b>Talk at Eposak</li></ol>
   </div>
 </div></section>
 
