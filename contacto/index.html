@@ -307,11 +307,25 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 /* Mapa proporcionado */
 .mapa{aspect-ratio:auto;height:240px}
 .mapa{max-width:40rem}
+/* Idioma */
+.nav .lang{color:var(--muted);font-weight:600;letter-spacing:.06em}
+/* Héroe a pantalla completa */
+.foto-logo{display:grid;place-items:center;background:var(--soft)}
+.foto-logo img{position:static!important;width:46%!important;height:auto!important;object-fit:contain!important}
+@media (min-width:900px){.hero{min-height:calc(100svh - 72px);display:flex;align-items:center}.hero>.wrap{width:100%}}
+/* Contacto en una pantalla */
+.contacto{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:0 36px;align-items:start}
+.contacto .dato:nth-child(3){grid-column:2;grid-row:1/span 2}
+.contacto .mapa{height:190px!important}
+.form textarea{min-height:84px}
+.form{max-width:none}
+@media (max-width:760px){.contacto{grid-template-columns:minmax(0,1fr)}.contacto .dato:nth-child(3){grid-column:auto;grid-row:auto}}
+.tarjetas{align-items:start}
 </style>
 
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto" aria-current="page">Contacto</a></nav></div></header><main>
+<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto" aria-current="page">Contacto</a><a class="lang" href="/en/" hreflang="en" lang="en">EN</a></nav></div></header><main>
 <section class="hero"><div class="wrap hero-grid">
   <div class="stack">
     <p class="eyebrow"><span class="cap">07</span> El siguiente capítulo es contigo</p>
@@ -322,7 +336,7 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
   <figure class="foto"><img src="/img/retrato.jpg" alt="Yuraima Mercado sonríe con los brazos cruzados, retrato en blanco y negro" style="object-position:50% 22%"></figure>
 </div></section>
 
-<section class="bloque" style="padding-top:0"><div class="wrap split">
+<section class="bloque"><div class="wrap split">
   <p class="eyebrow">Datos</p>
   <div class="contacto">
     <div class="dato"><p class="eyebrow">Correo</p><span class="valor" id="v-correo">hola@yuraimamercado.com</span>
@@ -351,8 +365,10 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
         <label>Cargo<input name="Cargo" autocomplete="organization-title"></label>
       </div>
       <label>¿Qué quieres lograr?<textarea name="Problema a resolver" required></textarea></label>
-      <label>¿Cómo consideras que puedo ayudarte?<textarea name="Cómo puedo ayudar"></textarea></label>
-      <label>Un poco de contexto: plazos, objetivos y lo que han hecho hasta ahora<textarea name="Contexto"></textarea></label>
+      <div class="doble">
+        <label>¿Cómo consideras que puedo ayudarte?<textarea name="Cómo puedo ayudar"></textarea></label>
+        <label>Contexto: plazos, objetivos y avances<textarea name="Contexto"></textarea></label>
+      </div>
       <button class="btn" type="submit">Enviar</button>
     </form>
   </div>

@@ -337,20 +337,29 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .fila{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) 170px}
 .fila .meta{text-align:right;white-space:normal}
 @media (max-width:760px){.fila{grid-template-columns:minmax(0,1fr)}.fila .meta{text-align:left}}
+/* Idioma */
+.nav .lang{color:var(--muted);font-weight:600;letter-spacing:.06em}
+/* Héroe a pantalla completa */
+.foto-logo{display:grid;place-items:center;background:var(--soft)}
+.foto-logo img{position:static!important;width:46%!important;height:auto!important;object-fit:contain!important}
+@media (min-width:900px){.hero{min-height:calc(100svh - 72px);display:flex;align-items:center}.hero>.wrap{width:100%}}
+.tarjetas{align-items:start}
 </style>
 
+<link rel="alternate" hreflang="es" href="https://yuraimamercado.com/agencia/">
+<link rel="alternate" hreflang="en" href="https://yuraimamercado.com/en/agency/">
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia" aria-current="page">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></header><main>
-<section class="hero"><div class="wrap">
-  <div class="stack" style="max-width:64rem">
-    <img class="logo-ym" src="/img/ym-negro.png" alt="Logo de YM Agency">
+<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia" aria-current="page">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a><a class="lang" href="/en/agency/" hreflang="en" lang="en">EN</a></nav></div></header><main>
+<section class="hero"><div class="wrap hero-grid">
+  <div class="stack">
     <p class="eyebrow"><span class="cap">04</span> Cómo lo pongo en práctica · YM Agency</p>
     <h1>Trasladamos la confianza de tu marca a medios, aliados y comunidades<span class="dot">.</span></h1>
     <p class="hilo">Todo lo que aprendí hoy trabaja para otras marcas.</p>
     <p class="lead">YM Agency es la agencia venezolana de relaciones públicas e influencia que fundé en 2015 y dirijo, con sede en Caracas. Cada plan se diseña desde la estrategia de tu negocio. Trabajamos con un equipo propio y una red de colaboradores en producción, diseño, fotografía y video que crece con cada proyecto.</p>
     <div class="acciones"><a class="btn" href="/contacto/">Hablemos de tu marca</a></div>
   </div>
+  <figure class="foto foto-logo"><img src="/img/ym-negro.png" alt="Logo de YM Agency"></figure>
 </div></section>
 
 <section class="bloque"><div class="wrap split">
@@ -470,6 +479,19 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
   <div class="stack">
     <div class="marcas"><span>Mercado Libre</span><span>Fiat</span><span>Diageo</span><span>Ron Santa Teresa</span><span>Cashea</span><span>PedidosYa</span><span>Mercantil Seguros</span><span>Bangente</span><span>CCCT</span><span>Grand Gourmet</span><span>El Plazas</span><span>AG Joyería</span><span>Startup Venezuela Summit</span><span>Bajo el Árbol</span><span>El Sistema</span><span>Fundación Proyecto Maniapure</span><span>Rawayana</span><span>Ridery</span><span>Hotel Londres Caracas</span><span>Cestaticket</span><span>Centro San Ignacio</span><span>LAGA UCAB</span><span>Menta &amp; Romero</span><span>ESTEI</span><span>EDO</span></div>
     <p class="muted">Acompañamos proyectos que generan valor, trabajo digno y soluciones.</p>
+  </div>
+</div></section>
+
+<section class="bloque" id="empezar"><div class="wrap split">
+  <p class="eyebrow">Cómo empezamos</p>
+  <div class="stack">
+    <h2>Tres pasos para trabajar juntos<span class="dot">.</span></h2>
+    <ol class="metodo">
+      <li><b>Conversación</b><p>Una primera reunión, en nuestra oficina en Caracas o en línea, para entender tu negocio, el momento de tu marca y lo que quieres lograr.</p></li>
+      <li><b>Diagnóstico y propuesta</b><p>En tres días hábiles recibes una propuesta con la estrategia, las acciones, el equipo asignado y la inversión.</p></li>
+      <li><b>Arranque</b><p>Con la propuesta aprobada activamos el plan, con un cronograma claro y reportes de resultados.</p></li>
+    </ol>
+    <div class="acciones"><a class="btn" href="/contacto/">Agenda la primera conversación</a></div>
   </div>
 </div></section>
 <section class="siguiente"><div class="wrap"><a href="/conferencias/"><span><span class="eyebrow">Siguiente capítulo · 05 · Cómo lo comparto</span><span class="t">Conferencias y escenarios<span class="dot">.</span></span></span><span class="flecha" aria-hidden="true">→</span></a></div></section>

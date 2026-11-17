@@ -309,18 +309,26 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .fila{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) 170px}
 .fila .meta{text-align:right;white-space:normal}
 @media (max-width:760px){.fila{grid-template-columns:minmax(0,1fr)}.fila .meta{text-align:left}}
+/* Idioma */
+.nav .lang{color:var(--muted);font-weight:600;letter-spacing:.06em}
+/* Héroe a pantalla completa */
+.foto-logo{display:grid;place-items:center;background:var(--soft)}
+.foto-logo img{position:static!important;width:46%!important;height:auto!important;object-fit:contain!important}
+@media (min-width:900px){.hero{min-height:calc(100svh - 72px);display:flex;align-items:center}.hero>.wrap{width:100%}}
+.tarjetas{align-items:start}
 </style>
 
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento" aria-current="page">Pensamiento</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></header><main>
-<section class="hero"><div class="wrap">
-  <div class="stack" style="max-width:62rem">
+<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento" aria-current="page">Pensamiento</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a><a class="lang" href="/en/" hreflang="en" lang="en">EN</a></nav></div></header><main>
+<section class="hero"><div class="wrap hero-grid">
+  <div class="stack">
     <p class="eyebrow"><span class="cap">03</span> Lo que aprendí</p>
     <h1>Ideas con criterio, alma y visión<span class="dot">.</span></h1>
     <p class="hilo">De veinte años de oficio nacieron estas ideas.</p>
     <p class="lead">Escribo cada semana en <a class="enlace-t" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7323002961196994560" target="_blank" rel="noopener">Desde la Verdad</a>, mi boletín en LinkedIn, y cada quince días en mi columna de opinión de <a class="enlace-t" href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener">El Estímulo</a>. Dos registros distintos con una misma convicción: la confianza es el activo más valioso de una marca.</p>
   </div>
+  <figure class="foto"><img src="/img/desde-la-verdad.jpg" alt="Yuraima Mercado en la portada de su boletín Desde la Verdad" style="object-position:97% 30%"></figure>
 </div></section>
 
 <section class="bloque"><div class="wrap split">

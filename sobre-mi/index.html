@@ -302,11 +302,18 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .fila{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) 170px}
 .fila .meta{text-align:right;white-space:normal}
 @media (max-width:760px){.fila{grid-template-columns:minmax(0,1fr)}.fila .meta{text-align:left}}
+/* Idioma */
+.nav .lang{color:var(--muted);font-weight:600;letter-spacing:.06em}
+/* Héroe a pantalla completa */
+.foto-logo{display:grid;place-items:center;background:var(--soft)}
+.foto-logo img{position:static!important;width:46%!important;height:auto!important;object-fit:contain!important}
+@media (min-width:900px){.hero{min-height:calc(100svh - 72px);display:flex;align-items:center}.hero>.wrap{width:100%}}
+.tarjetas{align-items:start}
 </style>
 
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi" aria-current="page">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></header><main>
+<header class="top"><div class="wrap"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi" aria-current="page">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a><a class="lang" href="/en/" hreflang="en" lang="en">EN</a></nav></div></header><main>
 <section class="hero"><div class="wrap hero-grid">
   <div class="stack">
     <p class="eyebrow"><span class="cap">02</span> De dónde vengo</p>
