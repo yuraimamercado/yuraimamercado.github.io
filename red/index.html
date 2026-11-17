@@ -325,6 +325,11 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .foto-logo img{position:static!important;width:46%!important;height:auto!important;object-fit:contain!important}
 @media (min-width:900px){.hero{min-height:calc(100svh - 72px);display:flex;align-items:center}.hero>.wrap{width:100%}}
 .tarjetas{align-items:start}
+/* Un solo amarillo */
+.metodo li::before{color:var(--ink)}
+.foto-logo::before{display:none}
+.nota-red{font-size:var(--t-s);max-width:40rem}
+.form fieldset input[name="Tema · Otra"]{margin-top:4px}
 </style>
 
 </head>
@@ -351,7 +356,7 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 <section class="bloque" id="sumate"><div class="wrap split">
   <p class="eyebrow">Tus datos</p>
   <div class="stack">
-    <div class="aviso-ok" id="enviado" hidden><p><b>Bienvenido a la red de YM Agency.</b> Ya formas parte de nuestra base y pronto recibirás nuestras notas e invitaciones.</p></div>
+    <div class="aviso-ok" id="enviado" hidden><p><b>Recibimos tu postulación.</b> Nuestro equipo la revisará y te escribiremos para confirmarte si te sumas a la red o si necesitamos más información.</p></div>
     <form class="form" id="form-red" data-script="" action="https://formsubmit.co/hola@yuraimamercado.com" method="POST">
       <input type="hidden" name="_subject" value="Nuevo registro en la Red de prensa e influencia YM">
       <input type="hidden" name="_next" value="https://yuraimamercado.com/red/?enviado=1#sumate">
@@ -379,16 +384,17 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
         <label>Cargo o rol<input name="Cargo" autocomplete="organization-title"></label>
         <label>Red social o web principal<input name="Red social" placeholder="@usuario o enlace"></label>
       </div>
-      <fieldset><legend>Categorías que cubres</legend><div class="chips"><label><input type="checkbox" name="Tema · Negocios y economía" value="Sí">Negocios y economía</label><label><input type="checkbox" name="Tema · Tecnología" value="Sí">Tecnología</label><label><input type="checkbox" name="Tema · Emprendimiento" value="Sí">Emprendimiento</label><label><input type="checkbox" name="Tema · Cultura y música" value="Sí">Cultura y música</label><label><input type="checkbox" name="Tema · Gastronomía" value="Sí">Gastronomía</label><label><input type="checkbox" name="Tema · Estilo de vida" value="Sí">Estilo de vida</label><label><input type="checkbox" name="Tema · Deporte" value="Sí">Deporte</label><label><input type="checkbox" name="Tema · Turismo" value="Sí">Turismo</label><label><input type="checkbox" name="Tema · Moda y belleza" value="Sí">Moda y belleza</label><label><input type="checkbox" name="Tema · Impacto social" value="Sí">Impacto social</label></div></fieldset>
+      <fieldset><legend>Categorías que cubres</legend><div class="chips"><label><input type="checkbox" name="Tema · Negocios y economía" value="Sí">Negocios y economía</label><label><input type="checkbox" name="Tema · Tecnología" value="Sí">Tecnología</label><label><input type="checkbox" name="Tema · Emprendimiento" value="Sí">Emprendimiento</label><label><input type="checkbox" name="Tema · Cultura y música" value="Sí">Cultura y música</label><label><input type="checkbox" name="Tema · Gastronomía" value="Sí">Gastronomía</label><label><input type="checkbox" name="Tema · Estilo de vida" value="Sí">Estilo de vida</label><label><input type="checkbox" name="Tema · Deporte" value="Sí">Deporte</label><label><input type="checkbox" name="Tema · Turismo" value="Sí">Turismo</label><label><input type="checkbox" name="Tema · Moda y belleza" value="Sí">Moda y belleza</label><label><input type="checkbox" name="Tema · Impacto social" value="Sí">Impacto social</label></div><input name="Tema · Otra" placeholder="Otra categoría: escríbela aquí" aria-label="Otra categoría"></fieldset>
       <label>Nicho o especialidad<input name="Nicho" placeholder="Ej.: finanzas personales, gastronomía caraqueña, música urbana"></label>
       <label>Audiencia aproximada (opcional)<input name="Audiencia" placeholder="Seguidores, oyentes o lectores"></label>
       <label class="acepto"><input type="checkbox" name="Autoriza" value="Sí" required><span>Autorizo a YM Agency a guardar mis datos para enviarme notas de prensa e invitaciones. Puedo actualizarlos o darme de baja cuando quiera escribiendo a hola@yuraimamercado.com.</span></label>
-      <button class="btn" type="submit">Sumarme a la red</button>
+      <p class="muted nota-red">Tu postulación entra a revisión. Cada perfil se evalúa según nuestros criterios de afinidad, alcance y calidad antes de sumarse a la base de YM Agency. Si necesitamos más información o si tu perfil no se ajusta por ahora, te escribiremos; cuando seas aceptado, también te avisaremos.</p>
+      <button class="btn" type="submit">Enviar mi postulación</button>
     </form>
   </div>
 </div></section>
 <script>if(location.search.indexOf('enviado=1')>-1){var e=document.getElementById('enviado');if(e){e.hidden=false}}</script>
-<script>(function(){var f=document.getElementById('form-red');if(!f||!f.dataset.script)return;f.addEventListener('submit',function(ev){ev.preventDefault();var b=f.querySelector('button');b.disabled=true;b.textContent='Enviando…';fetch(f.dataset.script,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))}).then(function(){f.reset();f.hidden=true;var e=document.getElementById('enviado');e.hidden=false;e.scrollIntoView({behavior:'smooth',block:'center'})}).catch(function(){b.disabled=false;b.textContent='Sumarme a la red';f.submit()})})})();</script>
+<script>(function(){var f=document.getElementById('form-red');if(!f||!f.dataset.script)return;f.addEventListener('submit',function(ev){ev.preventDefault();var b=f.querySelector('button');b.disabled=true;b.textContent='Enviando…';fetch(f.dataset.script,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))}).then(function(){f.reset();f.hidden=true;var e=document.getElementById('enviado');e.hidden=false;e.scrollIntoView({behavior:'smooth',block:'center'})}).catch(function(){b.disabled=false;b.textContent='Enviar mi postulación';f.submit()})})})();</script>
 </main>
 <footer class="pie"><div class="wrap"><div class="stack" style="gap:10px"><a class="marca" href="/">Yuraima Mercado<span class="dot">.</span></a><small>Estrategia en Comunicación, Relaciones Públicas e Influencia · Caracas, Venezuela · © 2026</small><a class="enlace" href="/ia/" style="font-size:.82rem">Trayectoria en datos</a><div class="redes"><a href="https://www.instagram.com/yuraimamercado/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/yuraimamercado/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7323002961196994560" target="_blank" rel="noopener">Desde la Verdad</a><a href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener">El Estímulo</a></div></div><nav class="nav" aria-label="Principal"><a href="/sobre-mi/" data-v="sobre-mi">Sobre mí</a><a href="/pensamiento/" data-v="pensamiento">Pensamiento</a><a href="/agencia/" data-v="agencia">YM Agency</a><a href="/conferencias/" data-v="conferencias">Conferencias</a><a href="/formacion/" data-v="formacion">Formación</a><a href="/prensa/" data-v="prensa">Prensa</a><a href="/contacto/" data-v="contacto">Contacto</a></nav></div></footer>
 <script>document.querySelectorAll('[data-copiar]').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById(b.dataset.copiar);var txt=t.textContent.trim();function ok(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar'},1800)}function sel(){var r=document.createRange();r.selectNodeContents(t);var s=getSelection();s.removeAllRanges();s.addRange(r)}try{navigator.clipboard.writeText(txt).then(ok,sel)}catch(e){sel()}})});</script>
