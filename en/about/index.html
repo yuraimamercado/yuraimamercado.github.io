@@ -312,6 +312,12 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 /* Un solo amarillo */
 .metodo li::before{color:var(--ink)}
 .foto-logo::before{display:none}
+/* Archivo */
+.galeria.archivo{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 14px}
+.galeria.archivo figure{margin:0;display:grid;gap:8px;align-content:start}
+.galeria.archivo img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--soft);display:block}
+.galeria.archivo figcaption{font-size:var(--t-s);color:var(--muted)}
+@media (max-width:760px){.galeria.archivo{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 
 <link rel="alternate" hreflang="es" href="https://yuraimamercado.com/sobre-mi/">
@@ -348,6 +354,23 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
     <div class="etapa"><p class="eyebrow">Startup ecosystem</p><p>Public relations for launches such as Cashea and Ridery, initiatives such as Venezuela Mobility Ventures and Venezuela Tech Week, where we curated the participation of brands and private companies.</p></div>
     <div class="etapa"><p class="eyebrow">YM Agency</p><p>I founded my boutique communications and public relations agency in Caracas, which today works with brands such as Mercado Libre, Fiat and Bajo el Árbol.</p></div>
     <div class="etapa"><p class="eyebrow">Education</p><p>Social communicator with a major in Journalism from Universidad Santa María. Graduate of the Communications Leadership Program at IESA, with Dircom Panama. I designed and lead the Public Relations and Influence Program at UNIMET.</p></div>
+  </div>
+</div></section>
+
+<section class="bloque"><div class="wrap split">
+  <p class="eyebrow">Archive</p>
+  <div class="stack">
+    <h2>Twenty years in pictures<span class="dot">.</span></h2>
+    <div class="galeria archivo">
+    <figure><img src="/img/archivo-desorden-publico.jpg" alt="Yuraima Mercado celebrating with Desorden Público" loading="lazy" style="object-position:50% 40%"><figcaption>With Desorden Público</figcaption></figure>
+    <figure><img src="/img/archivo-okills.jpg" alt="Yuraima Mercado with the band Okills" loading="lazy" style="object-position:50% 40%"><figcaption>With Okills</figcaption></figure>
+    <figure><img src="/img/archivo-vinilo-versus.jpg" alt="Yuraima Mercado with musicians at a rehearsal studio in Miami" loading="lazy" style="object-position:50% 45%"><figcaption>Vinilo Versus gathering, Miami</figcaption></figure>
+    <figure><img src="/img/archivo-los-menor3s.jpg" alt="Yuraima Mercado with Los Menor3s" loading="lazy" style="object-position:50% 45%"><figcaption>With Los Menor3s</figcaption></figure>
+    <figure><img src="/img/archivo-cashea-cotidiana.jpg" alt="Yuraima Mercado at the launch activation of Cashea's Cotidiana line" loading="lazy" style="object-position:50% 40%"><figcaption>Launch of Cashea's Cotidiana line</figcaption></figure>
+    <figure><img src="/img/archivo-cashea-equipo.jpg" alt="YM Agency and Cashea teams at the Cotidiana line launch" loading="lazy" style="object-position:50% 50%"><figcaption>The Cashea Cotidiana launch team</figcaption></figure>
+    <figure><img src="/img/archivo-business-fest.jpg" alt="Yuraima Mercado with the Business Fest creators team" loading="lazy" style="object-position:50% 40%"><figcaption>Business Fest</figcaption></figure>
+    <figure><img src="/img/conferencia-eposak.jpg" alt="Yuraima Mercado giving a talk at Eposak" loading="lazy" style="object-position:60% 35%"><figcaption>Talk at Eposak</figcaption></figure>
+    </div>
   </div>
 </div></section>
 
