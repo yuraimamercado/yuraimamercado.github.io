@@ -325,6 +325,14 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 .eyebrow .cap{display:block;margin:0 0 10px}
 .eyebrow .cap::after{content:".";color:var(--dot)}
 @media (max-width:760px){.riel .num,.eyebrow .cap{font-size:2rem}}
+/* Método y cifras */
+.metodo{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 28px;counter-reset:m}
+.metodo li{counter-increment:m;border-top:1px solid var(--line);padding:16px 0 20px;display:grid;gap:6px;align-content:start}
+.metodo li::before{content:counter(m,decimal-leading-zero);font-family:var(--display);font-weight:300;font-size:var(--t-h2);line-height:1;color:var(--dot-ink)}
+.metodo b{font-family:var(--display);font-weight:400;font-size:var(--t-h3)}
+.metodo p{color:var(--muted)}
+.cifras.seis{grid-template-columns:repeat(3,minmax(0,1fr));padding-block:6px 0}
+@media (max-width:760px){.metodo{grid-template-columns:minmax(0,1fr)}.cifras.seis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 
 </head>
@@ -338,6 +346,36 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
     <p class="hilo">Todo lo que aprendí hoy trabaja para otras marcas.</p>
     <p class="lead">YM Agency es la agencia venezolana de relaciones públicas e influencia que fundé en 2015 y dirijo, con sede en Caracas. Cada plan se diseña desde la estrategia de tu negocio. Trabajamos con un equipo propio y una red de colaboradores en producción, diseño, fotografía y video que crece con cada proyecto.</p>
     <div class="acciones"><a class="btn" href="/contacto/">Hablemos de tu marca</a></div>
+  </div>
+</div></section>
+
+<section class="bloque"><div class="wrap split">
+  <p class="eyebrow">Nuestro método</p>
+  <div class="stack">
+    <h2>Amplificación con Propósito<span class="dot">.</span></h2>
+    <p class="lead">Un método propio que guía cada proyecto, desde la idea hasta la amplificación. Cada proyecto activa las etapas que necesita y todas responden a la misma lógica.</p>
+    <ol class="metodo">
+      <li><b>Curiosidad</b><p>Qué necesita amplificar la marca hoy, qué es prioridad y por qué es relevante en este momento.</p></li>
+      <li><b>Indagación</b><p>Contexto, estado de la reputación y emoción que queremos generar: qué, quién, cuándo, dónde, por qué y cómo.</p></li>
+      <li><b>Contenido con intención</b><p>Un mensaje claro, alineado con el propósito de la marca y con valor real para su audiencia.</p></li>
+      <li><b>Creación estratégica</b><p>Concepto creativo, tono y formato al servicio del objetivo, con la experiencia como vehículo de comunicación.</p></li>
+      <li><b>Amplificación</b><p>Medios, influenciadores y alianzas coherentes, con convocatorias pensadas persona por persona.</p></li>
+      <li><b>Lectura de impacto</b><p>Resultados, percepción y aprendizajes que alimentan la siguiente acción.</p></li>
+    </ol>
+  </div>
+</div></section>
+
+<section class="bloque"><div class="wrap split">
+  <p class="eyebrow">Cómo trabajamos</p>
+  <div class="stack">
+    <h2>Cinco capas de la comunicación<span class="dot">.</span></h2>
+    <div class="filas">
+      <div class="fila"><h3>Contenido editorial y narrativa</h3><p class="muted">Contenidos con criterio editorial y mensajes pensados para amplificarse en medios, cuidando el tono, la coherencia y el sentimiento de marca.</p><span class="meta"></span></div>
+      <div class="fila"><h3>Relaciones públicas y confianza</h3><p class="muted">Estrategias que fortalecen la credibilidad y un relacionamiento cuidado con medios, aliados e influenciadores.</p><span class="meta"></span></div>
+      <div class="fila"><h3>Convocatorias y experiencias</h3><p class="muted">Convocatorias pensadas persona por persona y encuentros alineados al mensaje, desde espacios íntimos de conexión hasta grandes lanzamientos.</p><span class="meta"></span></div>
+      <div class="fila"><h3>Pensamiento creativo aplicado</h3><p class="muted">Conceptos creativos y experiencias memorables como vehículos de comunicación, con dirección creativa estratégica.</p><span class="meta"></span></div>
+      <div class="fila"><h3>Relación con influenciadores</h3><p class="muted">Alianzas basadas en afinidad y credibilidad, con estrategias de amplificación por nichos e impacto relevante.</p><span class="meta"></span></div>
+    </div>
   </div>
 </div></section>
 
@@ -405,9 +443,25 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 </div></section>
 
 <section class="bloque"><div class="wrap split">
+  <p class="eyebrow">Un año de trabajo</p>
+  <div class="stack">
+    <h2>La agencia en cifras<span class="dot">.</span></h2>
+    <p class="lead">Lo que logramos en 2025 y sostenemos en 2026.</p>
+    <div class="cifras seis" aria-label="YM Agency en cifras">
+      <div class="cifra"><b>+1.000<span class="dot">.</span></b><span>Perfiles de alto nivel en nuestra base de relacionamiento: empresarios, ejecutivos y líderes de opinión</span></div>
+      <div class="cifra"><b>+30%<span class="dot">.</span></b><span>Publicaciones positivas en medios en 2025, con un medio nacional en cada nota</span></div>
+      <div class="cifra"><b>40<span class="dot">.</span></b><span>Relaciones nuevas con periodistas cada año, diez por trimestre</span></div>
+      <div class="cifra"><b>30<span class="dot">.</span></b><span>Alianzas con influenciadores cada año, cinco cada dos meses</span></div>
+      <div class="cifra"><b>4 años<span class="dot">.</span></b><span>Acompañando a Mercado Libre; tres con Bajo el Árbol y dos con Mercantil Seguros</span></div>
+      <div class="cifra"><b>6<span class="dot">.</span></b><span>Experiencias de marca al año, del concepto a la producción</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="bloque"><div class="wrap split">
   <p class="eyebrow">Han confiado en nosotros</p>
   <div class="stack">
-    <div class="marcas"><span>Mercado Libre</span><span>Fiat</span><span>Diageo</span><span>Startup Venezuela Summit</span><span>Bajo el Árbol</span><span>Mercantil Seguros</span><span>Rawayana</span><span>Cashea</span><span>Ridery</span></div>
+    <div class="marcas"><span>Mercado Libre</span><span>Fiat</span><span>Diageo</span><span>Ron Santa Teresa</span><span>Cashea</span><span>PedidosYa</span><span>Mercantil Seguros</span><span>Bangente</span><span>CCCT</span><span>Grand Gourmet</span><span>El Plazas</span><span>AG Joyería</span><span>Startup Venezuela Summit</span><span>Bajo el Árbol</span><span>El Sistema</span><span>Fundación Proyecto Maniapure</span><span>Rawayana</span><span>Ridery</span><span>Hotel Londres Caracas</span><span>Cestaticket</span><span>Centro San Ignacio</span><span>LAGA UCAB</span><span>Menta &amp; Romero</span><span>ESTEI</span><span>EDO</span></div>
     <p class="muted">Acompañamos proyectos que generan valor, trabajo digno y soluciones.</p>
   </div>
 </div></section>
