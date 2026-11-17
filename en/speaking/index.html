@@ -315,8 +315,15 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 /* Un solo amarillo */
 .metodo li::before{color:var(--ink)}
 .foto-logo::before{display:none}
-.galeria{grid-template-columns:repeat(4,minmax(0,1fr))}
+.galeria{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media (max-width:760px){.galeria{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.videos{display:grid;grid-template-columns:minmax(0,1.778fr) minmax(0,.5625fr);gap:14px;align-items:start}
+.videos figure{margin:0;display:grid;gap:8px}
+.videos video{width:100%;display:block;background:var(--soft)}
+.videos figure:first-child video{aspect-ratio:16/9}
+.videos figure:last-child video{aspect-ratio:9/16}
+.videos figcaption{font-size:var(--t-s);color:var(--muted)}
+@media (max-width:760px){.videos{grid-template-columns:1fr}.videos figure:last-child{max-width:260px}}
 </style>
 
 <link rel="alternate" hreflang="es" href="https://yuraimamercado.com/conferencias/">
@@ -344,8 +351,17 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
     <figure><img src="/img/panel.jpg" alt="Yuraima Mercado as a panelist with a microphone" style="object-position:50% 40%"><figcaption>Panel · 2026</figcaption></figure>
     <figure><img src="/img/modo.jpg" alt="Yuraima Mercado at MODO Talks" style="object-position:50% 40%"><figcaption>MODO Talks</figcaption></figure>
     <figure><img src="/img/fipeu.jpg" alt="Yuraima Mercado at a FIPEV conversation" style="object-position:55% 50%"><figcaption>FIPEV</figcaption></figure>
+    <figure><img src="/img/conferencia-pwc.jpg" alt="Yuraima Mercado gives a talk at PwC Venezuela" loading="lazy" style="object-position:50% 25%"><figcaption>Talk at PwC · 2022</figcaption></figure>
     <figure><img src="/img/conferencia-archivo.jpg" alt="Yuraima Mercado speaking to the audience at a conference" loading="lazy" style="object-position:50% 35%"><figcaption>Keynote · Archive</figcaption></figure>
     <figure><img src="/img/conversatorio-archivo.jpg" alt="Yuraima Mercado at an outdoor panel overlooking El Ávila" loading="lazy" style="object-position:50% 60%"><figcaption>Panel · Archive</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="bloque"><div class="wrap split">
+  <p class="eyebrow">On video</p>
+  <div class="videos">
+    <figure><video src="/img/charla-fipev.mp4" poster="/img/charla-fipev-poster.jpg" controls playsinline preload="none" aria-label="Excerpt from Yuraima Mercado's talk at FIPEV"></video><figcaption>Talk at FIPEV</figcaption></figure>
+    <figure><video src="/img/panel-venezuela-renovable.mp4" poster="/img/panel-venezuela-renovable-poster.jpg" controls playsinline preload="none" aria-label="Excerpt from the Congreso Venezuela Renovable panel"></video><figcaption>Panel at the Congreso Venezuela Renovable</figcaption></figure>
   </div>
 </div></section>
 

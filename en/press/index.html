@@ -327,6 +327,13 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 /* Un solo amarillo */
 .metodo li::before{color:var(--ink)}
 .foto-logo::before{display:none}
+.entrevista{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;align-items:center;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.entrevista figure{margin:0}
+.entrevista video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;background:var(--soft)}
+.entrevista .meta{font-size:var(--t-l);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
+.entrevista h3{font-family:var(--display);font-weight:400;font-size:var(--t-h3);margin:0}
+.entrevista p{margin:0}
+@media (max-width:760px){.entrevista{grid-template-columns:140px minmax(0,1fr);gap:18px}}
 </style>
 
 <link rel="alternate" hreflang="es" href="https://yuraimamercado.com/prensa/">
@@ -342,7 +349,7 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
     <p class="lead">Bio, high-resolution photos, speaking topics and direct contact. This material is ready to use in articles, interviews, event programs and presentations.</p>
     <div class="acciones"><a class="btn" href="mailto:hola@yuraimamercado.com?subject=Solicitud%20de%20prensa">Request an interview</a><a class="enlace" href="#fotos">Download photos</a></div>
   </div>
-  <figure class="foto"><img src="/img/retrato.jpg" alt="Portrait of Yuraima Mercado"></figure>
+  <figure class="foto"><img src="/img/retrato-estudio.jpg" alt="Studio portrait of Yuraima Mercado" style="object-position:50% 25%"></figure>
 </div></section>
 
 <section class="bloque"><div class="wrap split">
@@ -368,6 +375,7 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
   <div class="stack">
     <div class="carrusel-wrap">
     <div class="descargas carrusel">
+      <a href="/img/retrato-estudio.jpg" download="yuraima-mercado-retrato-estudio.jpg"><img src="/img/retrato-estudio.jpg" alt="Studio portrait of Yuraima Mercado" loading="lazy" style="object-position:50% 25%">Studio portrait</a>
       <a href="/img/retrato.jpg" download="yuraima-mercado-retrato.jpg"><img src="/img/retrato.jpg" alt="Portrait of Yuraima Mercado" loading="lazy">Portrait</a>
       <a href="/img/sofa.jpg" download="yuraima-mercado-sofa.jpg"><img src="/img/sofa.jpg" alt="Yuraima Mercado sitting on a white sofa" loading="lazy" style="object-position:50% 62%">Portrait on sofa</a>
       <a href="/img/sobre-mi.jpg" download="yuraima-mercado-caracas.jpg"><img src="/img/sobre-mi.jpg" alt="Yuraima Mercado with Caracas in the background" loading="lazy">Caracas, black and white</a>
@@ -376,6 +384,7 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
       <a href="/img/svs-credencial.jpg" download="yuraima-mercado-speaker-svs.jpg"><img src="/img/svs-credencial.jpg" alt="Speaker, Startup Venezuela Summit" loading="lazy">Speaker, Startup Venezuela Summit</a>
       <a href="/img/taller-kron.jpg" download="yuraima-mercado-taller.jpg"><img src="/img/taller-kron.jpg" alt="On stage, workshop for entrepreneurs" loading="lazy">On stage, workshop for entrepreneurs</a>
       <a href="/img/meli.jpg" download="yuraima-mercado-mercado-libre.jpg"><img src="/img/meli.jpg" alt="At Mercado Libre" loading="lazy">At Mercado Libre</a>
+      <a href="/img/100-protagonistas-retrato.jpg" download="yuraima-mercado-100-protagonistas.jpg"><img src="/img/100-protagonistas-retrato.jpg" alt="Yuraima Mercado at Las 100 Protagonistas" loading="lazy" style="object-position:50% 30%">Las 100 Protagonistas</a>
       <a href="/img/cima.jpg" download="yuraima-mercado-premio-cima.jpg"><img src="/img/cima.jpg" alt="CIMA Award 2026" loading="lazy">CIMA Award 2026</a>
     </div>
     <div class="carrusel-nav"><button type="button" data-dir="-1" aria-label="Previous">←</button><button type="button" data-dir="1" aria-label="Next">→</button><span>Swipe to see more</span></div>
@@ -396,6 +405,8 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
 
 <section class="bloque"><div class="wrap split">
   <p class="eyebrow">In the media</p>
+  <div class="stack">
+  <div class="entrevista"><figure><video src="/img/entrevista-union-radio.mp4" poster="/img/entrevista-union-radio-poster.jpg" controls playsinline preload="none" aria-label="Excerpt from Shirley Varnagy's interview with Yuraima Mercado on Unión Radio"></video></figure><div class="stack"><p class="meta">Unión Radio · Interview</p><h3>In conversation with Shirley Varnagy<span class="dot">.</span></h3><p>An excerpt from the interview at the Unión Radio studios, on public relations, trust and reputation.</p></div></div>
   <div class="medios">
     <a class="medio" href="https://elestimulo.com/autor/yuraima-mercado/" target="_blank" rel="noopener"><span class="meta">El Estímulo · 2026</span><h3>Opinion column by Yuraima Mercado</h3></a>
     <a class="medio" href="https://www.unimet.edu.ve/unimet-abre-un-nuevo-diplomado-en-relaciones-publicas-e-influencia-para-profesionalizar-a-los-nuevos-estrategas-de-la-reputacion-y-la-influencia-en-venezuela/" target="_blank" rel="noopener"><span class="meta">UNIMET · 2026</span><h3>UNIMET launches a new Public Relations and Influence Program</h3></a>
@@ -403,6 +414,7 @@ p,.lead,.prose p,.recorrido p,.ideas-lista p,.carrusel .destacado p,.testimonio 
     <a class="medio" href="https://www.publicidadymercadeo.net/ym-agency-ideas-ingeniosas-y-disruptivas/" target="_blank" rel="noopener"><span class="meta">P&amp;M Magazine · 2024</span><h3>YM Agency: ingenious and disruptive ideas</h3></a>
     <a class="medio" href="https://www.publicidadymercadeo.net/la-escuelita-regresa/" target="_blank" rel="noopener"><span class="meta">P&amp;M Magazine · 2025</span><h3>Yuraima Mercado's Escuelita returns</h3></a>
     <a class="medio" href="https://las100protagonistas.com/yuraima-mercado/" target="_blank" rel="noopener"><span class="meta">Las 100 Protagonistas · 2024</span><h3>Profile of Yuraima Mercado</h3></a>
+  </div>
   </div>
 </div></section>
 
